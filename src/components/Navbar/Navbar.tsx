@@ -24,7 +24,7 @@ class Navbar extends Component {
             //nav bar DOM element
             <nav className = "NavbarItems">
                 
-                <img src="media/logo_white.png" className = "navbar-logo-image"/><h1 className="navbar-logo"> Shreyas </h1>
+                <img src="media/logo_white.png" alt="site_icon" className="navbar-logo-image"/><h1 className="navbar-logo"> Shreyas </h1>
                 
                 
                 <div className="menu-icon" onClick={this.handleClick} >
