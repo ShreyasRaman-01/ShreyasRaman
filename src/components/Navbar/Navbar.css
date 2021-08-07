@@ -34,13 +34,13 @@
     font-size: 18px;
     text-decoration: none;
     padding: 0.5rem;
+    background-color: transparent;
     
 }
 
 .nav-links:hover{
     background-color: purple;
-    width: 20px;
-    transition: all 0.8s ease-out;
+    transition: background-color 0.8s ease-out;
 }
 
 /* menu items when the menu button is not clicked: offset menu items to the right*/
@@ -53,6 +53,7 @@
     text-align: center;
     justify-content: end;
     margin-right: 15rem;
+    padding:0;
    
 }
 
