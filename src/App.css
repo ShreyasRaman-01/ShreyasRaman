@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+/* Applying CSS styling for navigation bar links and header*/
+.navbar-logo, .nav-links{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+  font-family: 'Titillium Web', sans-serif;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -27,6 +35,7 @@
 .App-link {
   color: #61dafb;
 }
+
 
 @keyframes App-logo-spin {
   from {
