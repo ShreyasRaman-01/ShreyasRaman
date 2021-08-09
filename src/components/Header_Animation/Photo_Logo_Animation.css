@@ -1,0 +1,290 @@
+
+/* CSS styling for the circular photo icon + coin flip animation */
+
+.photo-container{
+    height: 40vh;
+    width: 100vw;
+    padding-top: 4%;
+}
+
+/* creating the circular photo icon */
+.main-icon-photo{
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    justify-content: center;
+}
+/* #icon{
+    width: 450px;
+    height: 375px;
+    overflow: hidden;
+    border-radius: 500%;
+} */
+
+/* glow animation on hover */
+.main-icon-photo:hover {
+    box-shadow: 0px 0px 10px 15px #535FED;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+
+
+/* .main-icon-photo:active{
+    position: absolute;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+} */
+
+/* #shreyas{
+    animation-name: photo;
+}
+
+#logo{
+    animation-name: web-icon;
+} */
+
+/* keyframes for coin animation on click */
+
+@keyframes photo{
+
+    0%{
+        z-index: 10;
+        transform: rotateY(0deg);
+    }
+
+    25%{
+        z-index: 5;
+        transform: rotateY(90deg);
+    }
+
+    50%{
+        z-index: 5;
+        transform: rotateY(180deg);
+    }
+
+    75%{
+        z-index: 10;
+        transform: rotateY(270deg);
+    }
+
+    
+    100%{
+        z-index: 10;
+        transform: rotateY(360deg);
+    }
+    
+}
+
+
+@keyframes web-icon{
+
+    0%{
+        z-index: 10;
+        transform: rotateY(0deg);
+    }
+
+    25%{
+        z-index: 5;
+        transform: rotateY(90deg);
+    }
+
+    50%{
+        z-index: 5;
+        transform: rotateY(180deg);
+    }
+
+    75%{
+        z-index: 10;
+        transform: rotateY(270deg);
+    }
+
+    
+    100%{
+        z-index: 10;
+        transform: rotateY(360deg);
+    }
+    
+}
+
+
+@-moz-keyframes photo{
+
+    0%{
+        z-index: 10;
+        transform: rotateY(0deg);
+    }
+
+    25%{
+        z-index: 5;
+        transform: rotateY(90deg);
+    }
+
+    50%{
+        z-index: 5;
+        transform: rotateY(180deg);
+    }
+
+    75%{
+        z-index: 10;
+        transform: rotateY(270deg);
+    }
+
+    
+    100%{
+        z-index: 10;
+        transform: rotateY(360deg);
+    }
+    
+}
+
+@-moz-keyframes icon{
+
+    0%{
+        z-index: 10;
+        transform: rotateY(0deg);
+    }
+
+    25%{
+        z-index: 5;
+        transform: rotateY(90deg);
+    }
+
+    50%{
+        z-index: 5;
+        transform: rotateY(180deg);
+    }
+
+    75%{
+        z-index: 10;
+        transform: rotateY(270deg);
+    }
+
+    
+    100%{
+        z-index: 10;
+        transform: rotateY(360deg);
+    }
+    
+}
+
+@-o-keyframes photo{
+
+    0%{
+        z-index: 10;
+        transform: rotateY(0deg);
+    }
+
+    25%{
+        z-index: 5;
+        transform: rotateY(90deg);
+    }
+
+    50%{
+        z-index: 5;
+        transform: rotateY(180deg);
+    }
+
+    75%{
+        z-index: 10;
+        transform: rotateY(270deg);
+    }
+
+    
+    100%{
+        z-index: 10;
+        transform: rotateY(360deg);
+    }
+    
+}
+
+@-o-keyframes icon{
+
+    0%{
+        z-index: 10;
+        transform: rotateY(0deg);
+    }
+
+    25%{
+        z-index: 5;
+        transform: rotateY(90deg);
+    }
+
+    50%{
+        z-index: 5;
+        transform: rotateY(180deg);
+    }
+
+    75%{
+        z-index: 10;
+        transform: rotateY(270deg);
+    }
+
+    
+    100%{
+        z-index: 10;
+        transform: rotateY(360deg);
+    }
+    
+}
+
+@-webkit-keyframes photo{
+
+    0%{
+        z-index: 10;
+        transform: rotateY(0deg);
+    }
+
+    25%{
+        z-index: 5;
+        transform: rotateY(90deg);
+    }
+
+    50%{
+        z-index: 5;
+        transform: rotateY(180deg);
+    }
+
+    75%{
+        z-index: 10;
+        transform: rotateY(270deg);
+    }
+
+    
+    100%{
+        z-index: 10;
+        transform: rotateY(360deg);
+    }
+    
+}
+
+@-webkit-keyframes icon{
+
+    0%{
+        z-index: 10;
+        transform: rotateY(0deg);
+    }
+
+    25%{
+        z-index: 5;
+        transform: rotateY(90deg);
+    }
+
+    50%{
+        z-index: 5;
+        transform: rotateY(180deg);
+    }
+
+    75%{
+        z-index: 10;
+        transform: rotateY(270deg);
+    }
+
+    
+    100%{
+        z-index: 10;
+        transform: rotateY(360deg);
+    }
+    
+}
+
+

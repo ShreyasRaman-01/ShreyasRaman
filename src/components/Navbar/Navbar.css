@@ -1,26 +1,27 @@
 .NavbarItems{
     /* background: black; */
-    background: linear-gradient(to left, black, #555555 150%);
-    height: 70px;
+    background: linear-gradient(to left, white, white 150%);
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
 }
-
 .navbar-logo-image{
     height: 50px;
     width: 70px;
     overflow: hidden;
     align-self: center;
+    justify-content: center;
     cursor: pointer;
     margin-left: 18px;
 }
 
 .navbar-logo{
-    color: white;
-    font-weight: 300;
+    color: black;
+    font-family: 'Tillium-Web' sans-serif;
+    font-weight: 550;
     font-size: 30px;
     font-style: italic;
     margin-left: 5px;
@@ -29,37 +30,60 @@
 
 /* CSS styling for navigation bar links: idle + when hovered */
 .nav-links{
-    color: white;
-    font-weight: 200;
-    font-size: 18px;
+    color: #222222;
+    font-family: 'Tillium-Web' sans-serif;
+    font-weight: 500;
+    font-size: 16px;
     text-decoration: none;
-    padding: 0.5rem;
+    padding: 1rem 2rem;
     background-color: transparent;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    min-width: 90px;
+    justify-content: center;
     
 }
 
-.nav-links:hover{
-    background-color: purple;
-    transition: background-color 0.8s ease-out;
+.nav-li{
+    background-color: transparent;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    min-width: 90px;
+}
+
+.nav-links:hover, .nav-links:focus {
+    color: white;
+    box-shadow: inset 0 75px 0 0 purple;
+    transition: 0.2s ease-out;
+}
+
+.nav-li:hover, .nav-li:focus{
+    box-shadow: 0 2px 20px 0 purple;
+    transition: 0.4s ease-out;
 }
 
 /* menu items when the menu button is not clicked: offset menu items to the right*/
 .nav-menu{
     display: grid;
     grid-template-columns: repeat(6,auto);
-    grid-gap: 35px;
+    /* grid-gap: 35px; */
     list-style: none;
     width: 60vw;
     text-align: center;
     justify-content: end;
-    margin-right: 15rem;
+    /* margin:0; */
+    height: 100%;
+    align-items: center;
+    margin-left: 2rem;
     padding:0;
    
 }
 
 /* CSS styling for hamburger menu icon and close menu icon*/
 .fa-bars, .fa-times{
-    color: white;
+    color: black;
 }
 
 .menu-icon{
@@ -68,7 +92,7 @@
 
 
 /* setting up menu icon for mobile view nav bar drop down*/
-/* convert to menu icon when screen it < 960px wide*/
+/* convert to menu icon when screen it < 1000px wide*/
 @media screen and (max-width: 1000px){
     .NavbarItems{
         position: relative; 
@@ -86,9 +110,10 @@
         left: -100%;
         opacity: 1;
         transition: all 0.5s ease;
+        margin-left: 0;
     }
     .nav-menu.active{
-        background: black;
+        background: white;
         left: 0px;
         opacity: 1;
         transition: all 0.5s ease;
@@ -100,15 +125,17 @@
         width: 100%;
         display: table;
     }
-    .nav-links:hover{
-        background-color: #444444;
+    .nav-links:hover, .nav-links:focus{
+        height: 100%;
+        background-color: purple;
+        box-shadow: none;
     }
     .navbar-logo{
         position: absolute;
         top:0;
         left:0;
         transform:translate(25% 50%);
-        margin-top: 3px;
+        margin-top: 10px;
     }
 
     /* displaying the menu hamburger icon */

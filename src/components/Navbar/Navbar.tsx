@@ -24,7 +24,9 @@ class Navbar extends Component {
             //nav bar DOM element
             <nav className = "NavbarItems">
                 
-                <img src="media/logo_white.png" alt="site_icon" className="navbar-logo-image"/><h1 className="navbar-logo"> Shreyas </h1>
+                <img src="media/logo_black.png" alt="site_icon" className="navbar-logo-image"/> <h1 className="navbar-logo"> Shreyas </h1>
+
+               
                 
                 
                 <div className="menu-icon" onClick={this.handleClick} >
@@ -35,7 +37,7 @@ class Navbar extends Component {
                 
                 <ul className ={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map( (item, index) => { 
-                        return (<li key={index} > <a className={item.cName} href = {item.url}>  {item.page_name} </a>  </li>)  
+                        return (<li key={index} className='nav-li'> <a className={item.cName} href = {item.url}>  {item.page_name} </a>  </li>)  
                     
                     } )}
 
@@ -49,4 +51,4 @@ class Navbar extends Component {
 }
 
 
-export default Navbar
+export default Navbar;
