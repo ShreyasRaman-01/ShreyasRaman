@@ -61,7 +61,7 @@
     filter: blur(5px);
     transform: scale(1.2); 
     box-shadow: 0 0 20px #d35400;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .social-li:hover {
@@ -69,8 +69,10 @@
     
 }
 
-.social-icon:hover{
+/* when hovering over the social icon links, transition color for the social icons specifically */
+.social-li:hover .social-icon{
     color: #ffa502;
+    transition: 0.2s;
 }
 
 .social-icon{
@@ -80,29 +82,7 @@
 
 
 
-@keyframes fadeIn {
-    0% {opacity:0;}
-    50% {opacity: 0.5;}
-    100% {opacity:1;}
-  }
-  
-@-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    50% {opacity: 0.5;}
-    100% {opacity:1;}
-  }
 
-@-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    50% {opacity: 0.5;}
-    100% {opacity:1;}
-  }
-
-@-o-keyframes fadeIn {
-    0% {opacity:0;}
-    50% {opacity: 0.5;}
-    100% {opacity:1;}
-  }
   
 
 /* setting up menu icon for mobile view nav bar drop down*/

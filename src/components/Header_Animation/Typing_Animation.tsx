@@ -22,7 +22,6 @@ const Type_Animation = () => {
                     "am a machine learning researcher",
                     "❤️ data + data science",
                     "enjoy software developement",
-                    "like designing websites",
                     "am an avid chess player ♟️",
                     "play the guitar 🎸",
                     "enjoy writing poetry 🖋️",

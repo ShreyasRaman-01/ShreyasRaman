@@ -45,7 +45,7 @@ class Front_Page extends Component {
 
 
             <Type_Animation/> 
-
+            
 
             </div>
                 

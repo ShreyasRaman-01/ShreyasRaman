@@ -14,34 +14,38 @@
     height: 350px;
     justify-content: center;
 }
-/* #icon{
-    width: 450px;
-    height: 375px;
-    overflow: hidden;
-    border-radius: 500%;
-} */
+
 
 /* glow animation on hover */
 .main-icon-photo:hover {
-    box-shadow: 0px 0px 10px 15px #535FED;
-    transition: 0.5s ease-out;
+    animation: fadeIn 0.3s linear;
+    box-shadow: 12px 7px 10px #bababa;
     cursor: pointer;
 }
 
+@keyframes fadeIn {
+    0% {box-shadow: 0px 0px 0px #bababa;}
+    50% {box-shadow: 5px 5px 5px #bababa;}
+    100% {box-shadow: 12px 7px 10px #bababa;}
+  }
+  
+@-moz-keyframes fadeIn {
+    0% {box-shadow: 0px 0px 0px #bababa;}
+    50% {box-shadow: 5px 5px 5px #bababa;}
+    100% {box-shadow: 12px 7px 10px #bababa;}
+  }
 
-/* .main-icon-photo:active{
-    position: absolute;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-} */
+@-webkit-keyframes fadeIn {
+    0% {box-shadow: 0px 0px 0px #bababa;}
+    50% {box-shadow: 5px 5px 5px #bababa;}
+    100% {box-shadow: 12px 7px 10px #bababa;}
+  }
 
-/* #shreyas{
-    animation-name: photo;
-}
-
-#logo{
-    animation-name: web-icon;
-} */
+@-o-keyframes fadeIn {
+    0% {box-shadow: 0px 0px 0px #bababa;}
+    50% {box-shadow: 5px 5px 5px #bababa;}
+    100% {box-shadow: 12px 7px 10px #bababa;}
+  }
 
 /* keyframes for coin animation on click */
 
