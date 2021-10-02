@@ -1,0 +1,127 @@
+
+
+.container {
+  background: linear-gradient( #ad5982, #1095fc); 
+  height: 35rem;
+  margin-top: 0.9rem;
+}
+
+.skillBar {
+  max-width: 80rem;
+  padding: 9rem 1.6rem 1.6rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skillItem {
+  width: 10rem;
+  margin-top: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skillName {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-family: "Source-Code-Pro" sans-serif;
+  font-weight: 300;
+}
+
+.icon {
+  width: 55%;
+}
+
+/* Column layout */
+.columns {
+  margin: 2rem auto 4rem;
+  flex-wrap: wrap;
+  display: flex;
+  max-width: 100rem;
+  border-radius: 2rem;
+  background-color: white;
+  box-shadow: 0 0 7px 0 #333;
+}
+
+.column {
+  min-width: 25rem;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border-left: 0.5px solid #ccc;
+  border-top: 0.5px solid #ccc; */
+  padding: 1.6rem;
+  text-align: center;
+  
+}
+
+@media screen and (max-width: 767px) {
+  .column {
+    width: 100%;
+  }
+  .container {
+    height: 60rem;
+  }
+}
+
+.column:first-of-type {
+  border: 0;
+}
+
+.title {
+  margin: 1.2rem 0;
+  font-size: 2.1rem;
+}
+
+.description {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.domainIcon, .title, .description, .sectionTitle{
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.toolListItem{
+  padding-bottom: 0.4rem;
+}
+
+
+.domainIcon svg {
+  width: 5rem;
+}
+
+.domainIcon svg path {
+  fill: #800080;
+}
+
+.section {
+  margin: 2rem 0;
+}
+
+.sectionTitle {
+  color: #800080;
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+.subsetValues {
+  font-size: 1.4rem;
+}
+
+.toolList {
+  list-style: none;
+}
+
+.toolListItem {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}

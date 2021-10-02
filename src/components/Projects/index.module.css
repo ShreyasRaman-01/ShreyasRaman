@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projectsTitle {
+  font-weight: 600;
+  font-size: 45px;
+  margin-top: 4rem;
+  width: 80%;
+  max-width: 75rem;
+
+}

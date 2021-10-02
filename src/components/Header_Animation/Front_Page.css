@@ -1,99 +1,105 @@
 /* CSS styling for fade in animation of main text */
 
-
-.bold-title-1, .bold-title-2{
-    font-family: 'Source-Code-Pro' sans-serif;
-    font-weight: 300;
-    font-size: 55px;
-    color: black;
-    font-weight: bold;
-    display: inline-block;
-    margin: 30px 0px 10px 0px;
+.home-text {
+  padding: 1.6rem;
 }
 
+.bold-title-1 {
+  font-weight: 300;
+  font-size: 55px;
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+  margin: 30px 0px 10px 0px;
+}
 
-.bold-title-2{
-    margin-left: 1%;
+.bold-title-2 {
+  margin-left: 1%;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* CSS styling for the social media icons i.e. menu of social media links */
-.social-menu{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-top: 5%;
+.social-menu {
+  justify-content: space-around;
+  display: flex;
+  list-style: none;
+  margin-top: 3rem;
+  max-width: 36rem;
 }
 
-.social-li{
-    position: relative;
-    display: block;
-    font-size: 30px;
-    height: 50px;
-    width: 50px;
-    background: #666666;
-    line-height: 50px;
-    border-radius: 50%;
-    margin: 0 15px;
-    cursor: pointer;
+@media screen and (min-width: 767px) {
+  .social-menu {
+    min-width: 45rem;
+    max-width: 70rem;
+  }
 }
 
-.social-li::before{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    background: #d35400;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    z-index: -1; /* push highlight to back of screen in z-axis */
-
-    /* highlighting animation */
-    transform: scale(0.9);
-    transition: 0.7s;
+.social-li {
+  width: 5rem;
+  height: 5rem;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #666;
+  margin-left: 1.6rem;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
 }
-.social-li:hover:before{
 
-    /* blurring glow effect */
-    filter: blur(5px);
-    transform: scale(1.2); 
-    box-shadow: 0 0 20px #d35400;
-    transition: 0.3s;
+.social-li::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  z-index: -1; /* push highlight to back of screen in z-axis */
+
+  /* highlighting animation */
+  transform: scale(0.9);
+  transition: 0.7s;
 }
 
 .social-li:hover {
-    box-shadow: 0 0 20px #d35400;
-    
+  box-shadow: 0 0 20px #800080;
 }
 
-/* when hovering over the social icon links, transition color for the social icons specifically */
-.social-li:hover .social-icon{
-    color: #ffa502;
-    transition: 0.2s;
+.social-li:hover::before {
+  /* blurring glow effect */
+  filter: blur(5px);
+  transform: scale(1.2);
+  box-shadow: 0 0 20px #3c005a;
+  transition: 0.3s;
 }
 
-.social-icon{
-    color: #d3d3d3;
+.social-li i {
+  color: #d3d3d3;
+  transition: all 0.3s;
 }
 
+.social-li:hover i {
+  color: #d580ff;
+}
 
-
-
-
-  
+.social-li:first-of-type {
+  margin: 0;
+}
 
 /* setting up menu icon for mobile view nav bar drop down*/
 /* convert to menu icon when screen it < 1000px wide*/
-@media screen and (max-width: 1000px){
-    .bold-title-1, .bold-title-2{
-        font-size: 40px;
-    }
-
-    .social-menu{
-        margin-top: 15%
-    }
+@media screen and (max-width: 1000px) {
+  .bold-title-1,
+  .bold-title-2 {
+    font-size: 40px;
+  }
 }
-
