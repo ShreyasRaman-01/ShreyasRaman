@@ -1,0 +1,23 @@
+/* CSS styling for the circular photo icon + coin flip animation */
+
+.photo-container {
+  width: 80%;
+  max-width: 35rem;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+/* creating the circular photo icon */
+.main-icon-photo {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* glow animation on hover */
+.main-icon-photo:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}

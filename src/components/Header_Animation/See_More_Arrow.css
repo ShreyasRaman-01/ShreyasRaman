@@ -1,0 +1,10 @@
+/* CSS Arrow & Hover Animation */
+
+#more-arrows {
+    width: 75px;
+    height: 65px;
+}
+
+#more-arrows:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+/* CSS styling for typewriter text */
+.typing-animation {
+  padding: 0 2rem 4rem;
+}
+
+.typing-text {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source-Code-Pro" sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: black;
+  height: 10rem;
+}
+
+.static-text {
+  font-weight: 300;
+  font-size: 4rem;
+  color: black;
+}
+
+.static-text,
+.typing-text {
+  display: flex;
+  justify-content: center;
+}
+/* setting up menu icon for mobile view nav bar drop down*/
+/* convert to menu icon when screen it < 1000px wide*/
+@media screen and (max-width: 1000px) {
+  .static-text,
+  .typing-text {
+    font-size: 30px;
+  }
+}

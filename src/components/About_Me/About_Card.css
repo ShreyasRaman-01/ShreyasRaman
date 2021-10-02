@@ -1,0 +1,160 @@
+/* .about-me{
+  position: relative;
+} */
+.about-card-container::before {
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position:absolute;
+  background: linear-gradient(#f01, #0096ff);
+  clip-path: circle(20% at right 70%);
+  z-index: -2;
+}
+
+.about-card-container::after {
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position:absolute;
+  background: linear-gradient(#21a6f3, #fd2f73);
+  clip-path: circle(18% at left 50%);
+  z-index: -2;
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.learn-more-me {
+  padding: 1rem 1.6rem;
+  font-size: 1.4rem;
+  background-color: purple;
+  border-radius: 8px;
+  color: #fff;
+  min-width: 11rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.shreyas-card {
+  position: absolute;
+}
+
+.shreyas-card:hover > .shreyas-card-front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.shreyas-card:hover > .shreyas-card-back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.about-card {
+  box-shadow: 5px 10px 10px 5px rgba(110, 86, 86, 0.7);
+  width: 60%;
+  border-radius: 25px;
+  z-index: 1;
+  padding: 3.2rem;
+  top: 20%;
+  left: 8%;
+  backdrop-filter: blur(5px);
+  position: absolute;
+  margin-top: 2.5%;
+}
+
+@media screen and (max-width: 767px) {
+  .about-card {
+    padding-left: 3rem;
+    width: 90%;
+    left: 5%;
+  }
+}
+
+.about-card-content {
+  font-size: 20px;
+  padding: 0 1.6rem;
+}
+.about-card-content li {
+  margin: 10px 0;
+}
+
+.shreyas-card-image-front {
+  width: 22vw;
+  height: 58vh;
+  border-radius: 20px;
+  opacity: 0.97;
+}
+
+.shreyas-card-back h3 {
+  color: white;
+  font-family: "Source-Code-Pro" sans-serif;
+  font-size: 25px;
+  text-align: left;
+  text-decoration: underline wavy;
+  padding-top: 5%;
+  margin-bottom: 10%;
+}
+
+.shreyas-card-back li {
+  color: white;
+  font-family: "Source-Code-Pro" sans-serif;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 0;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  width: 90%;
+}
+
+.shreyas-card-front,
+.shreyas-card-back {
+  width: 22vw;
+  height: 58vh;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform 0.6s linear;
+  top: 30vh;
+  left: 70vw;
+  z-index: 2;
+}
+
+.shreyas-card-front {
+  transform: perspective(600px) rotateY(0deg);
+}
+.shreyas-card-back {
+  transform: perspective(600px) rotateY(180deg);
+  background-color: #808080;
+  border-radius: 20px;
+  padding-left: 2vw;
+}
+
+.about-card h2,
+p {
+  text-align: left;
+  color: black;
+  font-family: "Source-Code-Pro" sans-serif;
+}
+
+.about-card h2 {
+  font-weight: 600;
+  font-size: 38px;
+}
+
+.about-card p {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .shreyas-card-front,
+  .shreyas-card-back {
+    display: none;
+  }
+}
