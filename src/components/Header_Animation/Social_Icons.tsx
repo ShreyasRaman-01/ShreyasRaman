@@ -1,13 +1,14 @@
 //array of menu iterms in the social links icon bar: preserve centralized record of menu names
-//exporting the navbar data: to be imported in Navbar.tsx
+
 export const SOCIAL_ICONS: {
+  name: string;
   icon_pic: string;
   url: string;
   cName: string;
 }[] = [
-  { icon_pic: "fab fa-github", url: "#", cName: "social-icon" },
-  { icon_pic: "fab fa-linkedin-in", url: "#", cName: "social-icon" },
-  { icon_pic: "fab fa-facebook-f", url: "#", cName: "social-icon" },
-  { icon_pic: "far fa-envelope", url: "#", cName: "social-icon" },
-  { icon_pic: "far fa-clipboard", url: "#", cName: "social-icon" },
+  { name:"github",icon_pic: "fab fa-github", url: "https://github.com/ShreyasRaman-01", cName: "social-icon" },
+  { name:"linkedin", icon_pic: "fab fa-linkedin-in", url: "https://www.linkedin.com/in/shreyas-raman-167a2a142/", cName: "social-icon" },
+  { name:"facebook",icon_pic: "fab fa-facebook-f", url: "https://www.facebook.com/people/Shreyas-Raman/100007747637174/", cName: "social-icon" },
+  { name:"email",icon_pic: "far fa-envelope", url: "shreyas_sundara_raman@brown.edu", cName: "social-icon" },
+  { name:"resume",icon_pic: "far fa-clipboard", url: "../../data/Shreyas_Raman_Resume.pdf", cName: "social-icon" },
 ];

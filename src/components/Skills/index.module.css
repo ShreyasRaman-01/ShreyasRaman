@@ -1,6 +1,9 @@
 
 
-.container {
+.container{
+  height: 93rem;
+}
+.skillsPage {
   background: linear-gradient( #ad5982, #1095fc); 
   height: 35rem;
   margin-top: 0.9rem;

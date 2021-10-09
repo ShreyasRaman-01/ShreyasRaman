@@ -8,6 +8,7 @@ import FrontPage from "./components/Header_Animation/Front_Page";
 import AboutCard from "./components/About_Me/About_Card";
 import Skills from "./components/Skills";
 import Computer from "./icons/Computer";
+import FooterBar from "./components/Navbar/FooterBar";
 
 function App() {
   return (
@@ -17,10 +18,13 @@ function App() {
 
         <Switch>
           <Route exact path="/">
+          
             <FrontPage />
-            {/* <AboutCard/> */}
+            
+            <AboutCard/>
             <Projects/>
             <Skills/>
+            <FooterBar/>
           </Route>
 
           <Route path="/about">
@@ -39,6 +43,8 @@ function App() {
             <p>404: Not Found</p>
           </Route>
         </Switch>
+        
+        
       </Router>
     </div>
   );

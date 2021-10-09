@@ -28,6 +28,7 @@ const SKILLSET: Array<Skillset> = [
 const Skills = () => {
   return (
     <div className={styles.container}>
+    <div className={styles.skillsPage}>
       <div className={styles.skillBar}>
         {SKILLSET.map(({ name, icon: Icon, percent }) => (
           <div key={name} className={styles.skillItem}>
@@ -142,6 +143,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

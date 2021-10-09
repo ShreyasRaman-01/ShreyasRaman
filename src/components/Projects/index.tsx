@@ -26,7 +26,7 @@ const PACKAGES: Array<Filters> = [
     color: "#ACE38D",
   },
   {
-    name: "JavaFX",
+    name: "JavaFX - Animation",
     color: "#F88F46",
   },
   {
@@ -60,6 +60,61 @@ const PACKAGES: Array<Filters> = [
   {
     name:"d3.js",
     color:"#c170e0"
+  },
+  {
+    name:"Math",
+    color:"#c170e0"
+  },
+  { name:"TopoJSON",
+    color:"#c170e0"
+  },
+  {
+    name:"Normalize.css",
+    color:"#e65e5e"
+  },
+  {
+    name: "JSON",
+    color: "#ACE38D",
+  },
+  {
+    name: "signal.h",
+    color:"#3c92e6",
+  },
+  {
+    name: "stdio.h",
+    color:"#3c92e6",
+  },
+  {
+    name: "sys/wait.h",
+    color:"#3c92e6",
+  },
+  {
+    name:"sys/types.h",
+    color:"#3c92e6",
+  },
+  {
+    name:"stdlib.h",
+    color:"#3c92e6",
+  },
+  {
+    name: "unistd.h",
+    color: "#3c92e6"
+  },
+  {
+    name: "JavaFX - Scene",
+    color: "#F88F46",
+  },
+  {
+    name: "JavaFX - Events",
+    color: "#F88F46",
+  },
+  {
+    name: "StrictMath",
+    color: "#F88F46",
+  },
+  {
+    name: "Time",
+    color:"#ACE38D"
   }
 
 ];
@@ -97,6 +152,10 @@ const FILTERS: Array<Filters> = [
   {
     name: "HTML/CSS",
     color: "#d10d0d",
+  },
+  {
+    name: "Makefile",
+    color: "#003970",
   }
 
 ];
@@ -110,7 +169,7 @@ const PROJECT_DETAILS:  Array<ProjectDetails> = [
     bulletpoints: ['Led the Computer Vision branch of the project with the objective to track dog eye-fixations and correlate visual behavioral patterns of dogs','Sourced data sets of 35k+ images spanning 250k+ instances across 48 different classes and created a custom Mask-RCNN pipeline for transfer learning (across multiple GPUs)'],
     github_link: "https://www.github.com",
     languages: [FILTERS[0]],
-    packages: [PACKAGES[0],PACKAGES[1],PACKAGES[2],PACKAGES[10]]
+    packages: [PACKAGES[0],PACKAGES[1],PACKAGES[2],PACKAGES[10],PACKAGES[15]]
   },
   {
     icon_path: "../../../media/paleoai_icon.png",
@@ -128,7 +187,7 @@ const PROJECT_DETAILS:  Array<ProjectDetails> = [
     name: "COVID-19 Infection Modelling",
     catchphrase: "SIR Model | Predicting Disease Spread",
     bulletpoints: ['SIR model simulates the spread of a disease within a population to forecast infected, deceased and susceptible members over time','Includes 5 broad tunable parameters (and over 20 finer tunable parameters) to define a small population (its composition and size) as well the infection','Predicts disease spread over the broader population (death rates, recovery rates etc...) and between/within particular subgroups (i.e. to monitor "disease hotspots" or "contact tracing")'],
-    github_link: "https://www.github.com",
+    github_link: "https://github.com/ShreyasRaman-01/COVID-19_Disease_Modeling",
     languages: [FILTERS[6]],
     packages: []
   },
@@ -138,9 +197,9 @@ const PROJECT_DETAILS:  Array<ProjectDetails> = [
     name: "Pathfinder 1.0",
     catchphrase: "Gridworld Search | BFS, DFS, A*, Greedy Search, Q-Learning, R-Max",
     bulletpoints: ['Multiple pathfinding algorithms (DFS, BFS, A* Search, Greedy Algorithm) and reinforcement learning algorithms (Q-Learning and R-Max) visualized on an easy to understand color-coded gridworld','Displays 4 types of tiles: \'start\' tiles [where the agent being], \'end\' tiles [the goal], \'wall\' tiles [where the agent cannot pass through], \'trap\' tiles [penalty tiles with high cost e.g. regions of high traffic] ', 'Setup the gridworld, pick your algorithm and let the agent run!'],
-    github_link: "https://www.github.com",
+    github_link: "https://github.com/ShreyasRaman-01/Pathfinder_v1.0",
     languages: [FILTERS[0]],
-    packages: [PACKAGES[0], PACKAGES[8]]
+    packages: [PACKAGES[0], PACKAGES[8],PACKAGES[25]]
   },
   {
     icon_path: "../../../media/videogame_icon.png",
@@ -150,7 +209,7 @@ const PROJECT_DETAILS:  Array<ProjectDetails> = [
     bulletpoints: ['A thematic HTML web-page that serves as a data dashboard','Built interactive and stylized graphs, pie-charts and scatter plots (with summary tooltips) using d3.js','Created interactive user input streams [text/button input] to filter displayed data or perform scatter point regression in real-time [with animation]','Performed and displayed statistical analysis (e.g. box-whisker plot) that adapts search/display based on filters selected - also using d3.js','Completed as part of project for CS1951A - Data Science'],
     github_link: "https://www.github.com",
     languages: [FILTERS[2],FILTERS[7]],
-    packages: [PACKAGES[11]]
+    packages: [PACKAGES[11],PACKAGES[12],PACKAGES[13],PACKAGES[14]]
   },
   {
     icon_path: "../../../media/seamcarve_icon.png",
@@ -160,17 +219,17 @@ const PROJECT_DETAILS:  Array<ProjectDetails> = [
     bulletpoints: ['Implementation of liquid rescaling of an image through content-aware resizing', 'A GUI that displays the (jpg, jpeg or png) image to be resized along with a slider to vary the number of \'vertical seams\' carved out of the image','Calculates pixel importance and performs intelligent removal of the \'k\' lowest importance seams in the image, allowing for the image to be downscaled','Completed as part of project for CS0160 - Introduction to Data Structures and Algorithms'],
     github_link: "https://www.github.com",
     languages: [FILTERS[1]],
-    packages: []
+    packages: [PACKAGES[3], PACKAGES[22]]
   },
   {
     icon_path: "../../../media/shell_icon.png",
     alt_name:"Shell_Icon",
     name: "Shell",
     catchphrase: "A Custom UNIX Shell Implementation",
-    bulletpoints: ['A job-control system that parses input (bash) shell commands (e.g. cd, rm, ln, exit, pwd, ls, chdir etc...)  and executes, with appropriate error-handling if needed','Handles any other shell-commands via child processes using the fork system command (execv())','Handles input/output redirections, multi-threaded command execution, foreground and background jobs and signal masking/safety','Completed as part of project for CS0330 - Introduction to Computer Systems'],
+    bulletpoints: ['A job-control system that parses input (bash) shell commands (e.g. cd, rm, ln, exit, pwd, ls, chdir etc...)  and executes, with appropriate error-handling if needed','Handles any other shell-commands via child processes using the fork system command (execv())','Handles input/output redirections, multi-threaded command execution, foreground and background jobs and signal masking/safety','Handles "reaping" (removal/stopping) of terminated, stopped or signalled background jobs','Completed as part of project for CS0330 - Introduction to Computer Systems'],
     github_link: "https://www.github.com",
-    languages: [FILTERS[4]],
-    packages: []
+    languages: [FILTERS[4],FILTERS[8]],
+    packages: [PACKAGES[16],PACKAGES[17],PACKAGES[18],PACKAGES[19],PACKAGES[20],PACKAGES[21]]
   },
   {
     icon_path: "../../../media/flappybird_icon.png",
@@ -180,7 +239,7 @@ const PROJECT_DETAILS:  Array<ProjectDetails> = [
     bulletpoints: ['A GUI to play FlappyBird (original single-player game) or let a genetic algorithm learn to play the game','Genetic Algorithm Implementation: using feed-forward neural net to train several \'FlappyBird\' agents and tracking \'fitness\' of agents; top-performing agents move to the next generation', 'Tunable Experiments: the generation/population size, mean gap between pipes and speed of the agents are all tunable to make the game more/less difficult','Neural Network Visulalization: GUI interface to visualize the dominant weights and inputs beind the best-performing agent in each generation','Completed as part of final project for CS1050 - Introduction to Object Oriented Programming'],
     github_link: "https://www.github.com",
     languages: [FILTERS[1]],
-    packages: [PACKAGES[3], PACKAGES[4]]
+    packages: [PACKAGES[3], PACKAGES[22], PACKAGES[23], PACKAGES[4],PACKAGES[24]]
   }
 ]
 

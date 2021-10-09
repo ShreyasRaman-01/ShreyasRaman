@@ -1,0 +1,22 @@
+/* CSS styling for bottom footer bar */
+
+.footerBarContainer{
+    background-color: #666;
+    height: 5rem;
+    
+}
+.footerText{
+    text-align: center;
+    color: white;
+    font-size: 12pt;
+    font-weight: 200;
+    font-family: "Source-Code-Pro" sans-serif;
+    padding-top: 0.8rem;
+}
+
+@media screen and (max-width: 767px) {
+    
+    .footerText{
+        font-size: 10pt;
+    }
+  }

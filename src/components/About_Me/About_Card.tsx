@@ -55,6 +55,8 @@ class AboutCard extends Component {
       </li>
     </ul>
   );
+
+  
   about_me_long_content = (
     <p style={clicked_paragraph_style}>
       {" "}
@@ -89,7 +91,6 @@ class AboutCard extends Component {
   //function to render the about card
   render() {
     return (
-      <div className="about-me">
       <div className="about-card-container">
         <div className="about-card">
           <div className="about-header">
@@ -114,15 +115,16 @@ class AboutCard extends Component {
         </div>
 
         <div className="shreyas-card">
-          <div className="shreyas-card-front">
-            <img
-              src="/media/shreyas_card_icon.jpg"
-              alt="shreyas_card_icon1"
-              className="shreyas-card-image-front"
-            />
-          </div>
+          <div className="shreyas-card-inner">
+            <div className="shreyas-card-front">
+              <img
+                src="/media/shreyas_card_icon.jpg"
+                alt="shreyas_card_icon1"
+                className="shreyas-card-image-front"
+              />
+            </div>
 
-          <div className="shreyas-card-back">
+            <div className="shreyas-card-back">
             <h3> Shreyas' Fun Facts : </h3>
             <ul>
               <li>
@@ -139,9 +141,9 @@ class AboutCard extends Component {
 
               <li> I'm a 🐶 person: adore <b>GSDs</b></li>
             </ul>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     );
   }

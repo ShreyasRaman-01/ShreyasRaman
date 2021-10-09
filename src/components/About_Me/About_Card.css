@@ -1,27 +1,28 @@
-/* .about-me{
-  position: relative;
-} */
+
+
+
 .about-card-container::before {
   content: "";
-  height: 100vh;
+  height: 650px;
   width: 100vw;
   top: 0;
   left: 0;
-  position:absolute;
+  position: absolute;
   background: linear-gradient(#f01, #0096ff);
-  clip-path: circle(20% at right 70%);
+  clip-path: circle(22% at right 60%);
   z-index: -2;
 }
 
 .about-card-container::after {
   content: "";
-  height: 100vh;
+  height: 60vh;
   width: 100vw;
   top: 0;
   left: 0;
-  position:absolute;
+
+  position: absolute;
   background: linear-gradient(#21a6f3, #fd2f73);
-  clip-path: circle(18% at left 50%);
+  clip-path: circle(20% at left 48%);
   z-index: -2;
 }
 
@@ -42,17 +43,12 @@
   cursor: pointer;
 }
 
-.shreyas-card {
-  position: absolute;
+.about-card-container {
+  position: relative;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
-.shreyas-card:hover > .shreyas-card-front {
-  transform: perspective(600px) rotateY(-180deg);
-}
-
-.shreyas-card:hover > .shreyas-card-back {
-  transform: perspective(600px) rotateY(0deg);
-}
 
 .about-card {
   box-shadow: 5px 10px 10px 5px rgba(110, 86, 86, 0.7);
@@ -60,18 +56,16 @@
   border-radius: 25px;
   z-index: 1;
   padding: 3.2rem;
-  top: 20%;
-  left: 8%;
   backdrop-filter: blur(5px);
-  position: absolute;
-  margin-top: 2.5%;
+  margin-left: 5rem;
+  min-height: 49rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1000px) {
   .about-card {
     padding-left: 3rem;
     width: 90%;
-    left: 5%;
+    margin: auto;
   }
 }
 
@@ -79,15 +73,89 @@
   font-size: 20px;
   padding: 0 1.6rem;
 }
+
 .about-card-content li {
-  margin: 10px 0;
+  margin: 20px 0;
+}
+
+.about-card h2,
+p {
+  text-align: left;
+  color: black;
+  font-family: "Source-Code-Pro" sans-serif;
+  margin-bottom: 1rem;
+}
+
+.about-card h2 {
+  font-weight: 600;
+  font-size: 38px;
+}
+
+.about-card p {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+
+/* Shreyas card */
+.shreyas-card {
+  background-color: transparent;
+  width: 300px;
+  height: 420px;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  perspective: 1000;
+  position: absolute;
+  bottom: 0;
+  right: 6%;
+}
+
+.shreyas-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: transform ease-out 0.6s;
+  -moz-transition: transform ease-out 0.6s;
+  -o-transition: transform ease-out 0.6s;
+  transition: transform ease-out 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+
+.shreyas-card:hover .shreyas-card-inner {
+  -webkit-transform: perspective(600px) rotateY(180deg);
+  -moz-transform:  perspective(600px) rotateY(180deg);
+  transform: perspective(600px) rotateY(180deg); 
+
+}
+
+.shreyas-card-front,
+.shreyas-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.shreyas-card-back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  background-color: #808080;
+  padding-left: 2vw;
+  border-radius: 20px;
 }
 
 .shreyas-card-image-front {
-  width: 22vw;
-  height: 58vh;
+  width: 300px;
+  height: 420px;
   border-radius: 20px;
-  opacity: 0.97;
 }
 
 .shreyas-card-back h3 {
@@ -103,53 +171,12 @@
 .shreyas-card-back li {
   color: white;
   font-family: "Source-Code-Pro" sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   text-align: left;
   padding-left: 0;
-  margin-bottom: 10%;
+  margin-bottom: 12%;
   margin-top: 5%;
   width: 90%;
-}
-
-.shreyas-card-front,
-.shreyas-card-back {
-  width: 22vw;
-  height: 58vh;
-  overflow: hidden;
-  backface-visibility: hidden;
-  position: absolute;
-  transition: transform 0.6s linear;
-  top: 30vh;
-  left: 70vw;
-  z-index: 2;
-}
-
-.shreyas-card-front {
-  transform: perspective(600px) rotateY(0deg);
-}
-.shreyas-card-back {
-  transform: perspective(600px) rotateY(180deg);
-  background-color: #808080;
-  border-radius: 20px;
-  padding-left: 2vw;
-}
-
-.about-card h2,
-p {
-  text-align: left;
-  color: black;
-  font-family: "Source-Code-Pro" sans-serif;
-}
-
-.about-card h2 {
-  font-weight: 600;
-  font-size: 38px;
-}
-
-.about-card p {
-  font-weight: 400;
-  font-size: 20px;
-  margin: 0;
 }
 
 @media screen and (max-width: 1000px) {

@@ -33,6 +33,7 @@
   max-width: 36rem;
 }
 
+
 @media screen and (min-width: 767px) {
   .social-menu {
     min-width: 45rem;
@@ -94,6 +95,21 @@
 .social-li:first-of-type {
   margin: 0;
 }
+
+.social-icon{
+  text-decoration: none;
+}
+
+p {
+  font-size: 13px;
+  margin-top: 1rem;
+  text-align: center;
+  font-family: "Source-Code-Pro" sans-serif;
+  z-index: 2;
+  font-weight: 400;
+}
+
+
 
 /* setting up menu icon for mobile view nav bar drop down*/
 /* convert to menu icon when screen it < 1000px wide*/
