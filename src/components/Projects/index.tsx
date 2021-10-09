@@ -162,7 +162,7 @@ const FILTERS: Array<Filters> = [
 
 const PROJECT_DETAILS:  Array<ProjectDetails> = [
   {
-    icon_path: "../../../media/dog_icon.png",
+    icon_path: "ShreyasRaman-01.github.io/media/dog_icon.png",
     alt_name:"Dog Fixations Image",
     name: "Tracking Dog Eye-Fixations",
     catchphrase: "Panoptic Object Segmentation in Videos | UTRA Award",
@@ -172,7 +172,7 @@ const PROJECT_DETAILS:  Array<ProjectDetails> = [
     packages: [PACKAGES[0],PACKAGES[1],PACKAGES[2],PACKAGES[10],PACKAGES[15]]
   },
   {
-    icon_path: "../../../media/paleoai_icon.png",
+    icon_path: "ShreyasRaman-01.github.io/media/paleoai_icon.png",
     alt_name:"PaleoAI_icon",
     name: "PaleoAI: Taxonomical Identification",
     catchphrase: "Dataset Expansion | Generative Modelling",
@@ -182,7 +182,7 @@ const PROJECT_DETAILS:  Array<ProjectDetails> = [
     packages:[PACKAGES[2],PACKAGES[5],PACKAGES[6],PACKAGES[7],PACKAGES[9]]
   },
   {
-    icon_path: "../../../media/COVID_icon.png",
+    icon_path: "ShreyasRaman-01.github.io/media/COVID_icon.png",
     alt_name:"COVID_SIR_icon",
     name: "COVID-19 Infection Modelling",
     catchphrase: "SIR Model | Predicting Disease Spread",
@@ -192,7 +192,7 @@ const PROJECT_DETAILS:  Array<ProjectDetails> = [
     packages: []
   },
   {
-    icon_path: "../../../media/pathfinder_icon.png",
+    icon_path: "ShreyasRaman-01.github.io/media/pathfinder_icon.png",
     alt_name:"Pathfinder_Icon",
     name: "Pathfinder 1.0",
     catchphrase: "Gridworld Search | BFS, DFS, A*, Greedy Search, Q-Learning, R-Max",
@@ -202,7 +202,7 @@ const PROJECT_DETAILS:  Array<ProjectDetails> = [
     packages: [PACKAGES[0], PACKAGES[8],PACKAGES[25]]
   },
   {
-    icon_path: "../../../media/videogame_icon.png",
+    icon_path: "ShreyasRaman-01.github.io/media/videogame_icon.png",
     alt_name:"Dashboard_Visualizer_Icon",
     name: "Data Dashboard Visualizer",
     catchphrase: "Kaggle Datasets: Video Game Sales | Interactive + Animated Dashboard",
@@ -212,7 +212,7 @@ const PROJECT_DETAILS:  Array<ProjectDetails> = [
     packages: [PACKAGES[11],PACKAGES[12],PACKAGES[13],PACKAGES[14]]
   },
   {
-    icon_path: "../../../media/seamcarve_icon.png",
+    icon_path: "ShreyasRaman-01.github.io/media/seamcarve_icon.png",
     alt_name:"SeamCarve_Icon",
     name: "SeamCarve 1.0",
     catchphrase: "Image Resizing | Pixel Importance",
@@ -222,7 +222,7 @@ const PROJECT_DETAILS:  Array<ProjectDetails> = [
     packages: [PACKAGES[3], PACKAGES[22]]
   },
   {
-    icon_path: "../../../media/shell_icon.png",
+    icon_path: "ShreyasRaman-01.github.io/media/shell_icon.png",
     alt_name:"Shell_Icon",
     name: "Shell",
     catchphrase: "A Custom UNIX Shell Implementation",
@@ -232,7 +232,7 @@ const PROJECT_DETAILS:  Array<ProjectDetails> = [
     packages: [PACKAGES[16],PACKAGES[17],PACKAGES[18],PACKAGES[19],PACKAGES[20],PACKAGES[21]]
   },
   {
-    icon_path: "../../../media/flappybird_icon.png",
+    icon_path: "ShreyasRaman-01.github.io/media/flappybird_icon.png",
     alt_name:"Evolution_Icon",
     name: "Evolution",
     catchphrase: "Genetic Algorithm | Neural Network | FlappyBird",

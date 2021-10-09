@@ -29,7 +29,7 @@ class Navbar extends Component {
       <nav className="NavbarItems">
         <NavLink to="/">
           <img
-            src="media/logo_black.png"
+            src="ShreyasRaman-01.github.io/media/logo_black.png"
             alt="site_icon"
             className="navbar-logo-image"
           />
