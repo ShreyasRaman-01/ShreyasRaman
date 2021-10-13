@@ -19,7 +19,7 @@ class PhotoLogo extends Component {
       //DOM elements for photo logo
       <div className="photo-container" onClick={this.handleClick}>
         <img
-          src="ShreyasRaman-01.github.io/media/shreyas_icon.jpeg"
+          src="public/media/shreyas_icon.jpeg"
           alt="Shreyas"
           className="main-icon-photo"
           id="shreyas"

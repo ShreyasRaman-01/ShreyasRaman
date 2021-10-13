@@ -247,8 +247,8 @@ const Projects = () => (
   <div className={styles.container}>
     <h2 className={styles.projectsTitle}>My Recent Work</h2>
 
-    {Array.from(PROJECT_DETAILS.keys()).map((val) => (
-      <ProjectBox key={val} packages={PROJECT_DETAILS[val].packages} filters={PROJECT_DETAILS[val].languages} icon={PROJECT_DETAILS[val].icon_path} alt_icon_name = {PROJECT_DETAILS[val].alt_name} github_link = {PROJECT_DETAILS[val].github_link} name = {PROJECT_DETAILS[val].name} catchphrase = {PROJECT_DETAILS[val].catchphrase} description = {PROJECT_DETAILS[val].bulletpoints}/>
+    {Array.from(PROJECT_DETAILS.keys()).map((val, index) => (
+      <ProjectBox key={index} packages={PROJECT_DETAILS[val].packages} filters={PROJECT_DETAILS[val].languages} icon={PROJECT_DETAILS[val].icon_path} alt_icon_name = {PROJECT_DETAILS[val].alt_name} github_link = {PROJECT_DETAILS[val].github_link} name = {PROJECT_DETAILS[val].name} catchphrase = {PROJECT_DETAILS[val].catchphrase} description = {PROJECT_DETAILS[val].bulletpoints}/>
     ))}
 
 

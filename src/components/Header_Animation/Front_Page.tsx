@@ -2,7 +2,7 @@ import TypeAnimation from "./Typing_Animation";
 import { SOCIAL_ICONS } from "./Social_Icons";
 import PhotoLogo from "./Photo_Logo_Animation";
 import {CopyToClipboard } from "react-copy-to-clipboard";
-import React, { Component, useEffect, useState } from "react";
+import {useEffect, useState } from "react";
 
 
 //importing the CSS styling for the front page + email tooltip
@@ -51,14 +51,14 @@ const FrontPage = () => {
           {SOCIAL_ICONS.map((item, index) => {
 
             // for email, return the icon with CopyToClipboard
-            if (item.name=="email"){
+            if (item.name==="email"){
               return (
 
                 
                 <div>
                 <CopyToClipboard text={item.url} onCopy = {handleCopy}>  
                   <div>
-                  <a className={item.cName}>
+                  <a href="" className={item.cName}>
                     {""}
                     <li key={index} className="social-li">
                       {" "}
