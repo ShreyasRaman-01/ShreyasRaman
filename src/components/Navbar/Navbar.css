@@ -26,6 +26,7 @@
   font-style: italic;
   margin-left: 5px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* CSS styling for navigation bar links: idle + when hovered */

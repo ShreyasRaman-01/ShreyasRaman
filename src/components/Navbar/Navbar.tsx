@@ -29,12 +29,14 @@ class Navbar extends Component {
       <nav className="NavbarItems">
         <NavLink to="/">
           <img
-            src="ShreyasRaman-01.github.io/media/logo_black.png"
+            src="media/logo_black.png"
             alt="site_icon"
             className="navbar-logo-image"
           />
         </NavLink>{" "}
+        <NavLink to="/">
         <h1 className="navbar-logo"> Shreyas </h1>
+        </NavLink>{" "}
         <div className="menu-icon" onClick={this.handleClick}>
           <i
             className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}

@@ -58,7 +58,7 @@ const FrontPage = () => {
                 <div>
                 <CopyToClipboard text={item.url} onCopy = {handleCopy}>  
                   <div>
-                  <a href="" className={item.cName}>
+                  <a href="#" className={item.cName}>
                     {""}
                     <li key={index} className="social-li">
                       {" "}
