@@ -1,0 +1,107 @@
+/* CSS styling for work experience box */
+
+.work-exp-box {
+  width: 90%;
+  max-width: 80rem;
+  border-radius: 35px;
+  background-color: white;
+  box-shadow: 0 0 14px 1px #bababa;
+  margin-top: 4rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1.6rem;
+}
+
+.header h3 {
+  margin-left: 2rem;
+}
+
+.header h3 span {
+  display: block;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 2.7rem;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 1.9rem;
+  font-style: italic;
+  margin-top: 0.8rem;
+  color: #747474;
+}
+
+.work-exp-content {
+  padding: 1.6rem 4.8rem;
+}
+
+.work-exp-content li {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.work-exp-box img {
+  height: 9vh;
+  align-self: left;
+  padding-left: 2%;
+  padding-top: 1%;
+}
+
+.work-exp-packages {
+  padding: 1.6rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.github svg {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 3rem;
+  fill: white;
+}
+
+.work-exp-tags {
+  position: relative;
+  background-color: transparent;
+  padding: 1.6rem;
+  list-style: none;
+}
+
+.filter {
+  font-size: 1.6rem;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  text-align: center;
+  min-width: 9rem;
+  margin: 0 1rem 1rem 0;
+  display: inline-block;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .filter {
+    font-size: 1.2rem;
+    min-width: 8rem;
+    margin: 0 0.5rem 1rem 0;
+  }
+}
+
+.filter-package {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  color: #222;
+}
+
+.active-filter {
+  border-bottom: 0.3rem solid #bababa;
+  transform: translateY(-0.5rem);
+}

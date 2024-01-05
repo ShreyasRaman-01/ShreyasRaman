@@ -5,9 +5,10 @@ export const MenuItems: {
   url: string;
 }[] = [
   { page_name: "About", url: "/about" },
-  // { page_name: "Experiences", url: "/experiences" },
-  { page_name: "Projects & Research", url: "/projects" },
+  { page_name: "Experience", url: "/work_experiences" },
+  { page_name: "Projects", url: "/projects" },
   { page_name: "Skills", url: "/skills" },
+  { page_name: "Research", url: "/research"},
   // { page_name: "Blog", url: "/blog" },
   // { page_name: "Contact Me", url: "/contact-me" },
 ];

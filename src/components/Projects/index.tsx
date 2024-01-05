@@ -12,6 +12,8 @@ interface ProjectDetails{
   packages: Array<Filters>;
 }
 
+
+
 const PACKAGES: Array<Filters> = [
   {
     name: "NumPy",
@@ -161,22 +163,13 @@ const FILTERS: Array<Filters> = [
 ];
 
 const PROJECT_DETAILS:  Array<ProjectDetails> = [
-  {
-    icon_path: "media/dog_icon.png",
-    alt_name:"Dog Fixations Image",
-    name: "Tracking Dog Eye-Fixations",
-    catchphrase: "Panoptic Object Segmentation in Videos | UTRA Award",
-    bulletpoints: ['Led the Computer Vision branch of the project with the objective to track dog eye-fixations and correlate visual behavioral patterns of dogs','Sourced data sets of 35k+ images spanning 250k+ instances across 48 different classes and created a custom Mask-RCNN pipeline for transfer learning (across multiple GPUs)'],
-    github_link: "https://www.github.com",
-    languages: [FILTERS[0]],
-    packages: [PACKAGES[0],PACKAGES[1],PACKAGES[2],PACKAGES[10],PACKAGES[15]]
-  },
+  
   {
     icon_path: "media/paleoai_icon.png",
     alt_name:"PaleoAI_icon",
     name: "PaleoAI: Taxonomical Identification",
     catchphrase: "Dataset Expansion | Generative Modelling",
-    bulletpoints: ['Expanded existing leaf datasets 8× by adding 300,000+ new images, with unique ids and taxonomical details','New data improved model classification accuracy to >80%','Web-scraping Tool: scrapes online databases for image file-links; automatically saves images using a user-specified or auto-generated file structure','Taxonomic Lookup: an SQLite database used as a reference tool to filter family, genus and species names for the image dataset', 'Cycle-GAN: enhancing a Cycle-GAN model for translations between leaf and fossil images - used to generate synthetic training samples' ],
+    bulletpoints: ['Expanded existing dataset 8× by adding 300,000+ images, with unique taxonomies','New data improved model classification accuracy to >80%','Web-scraping Tool: scrapes online databases for image file-links; automatically saves images using a user-specified or auto-generated file structure','Taxonomic Lookup: an SQLite database used as a reference tool to filter family, genus and species names for the image dataset', 'Cycle-GAN: enhancing a Cycle-GAN model for translations between leaf and fossil images - used to generate synthetic training samples', 'Completed under Prof. Thomas Serre - Serre Labs' ],
     github_link: "https://www.github.com",
     languages:[FILTERS[0],FILTERS[5]],
     packages:[PACKAGES[2],PACKAGES[5],PACKAGES[6],PACKAGES[7],PACKAGES[9]]
@@ -243,9 +236,10 @@ const PROJECT_DETAILS:  Array<ProjectDetails> = [
   }
 ]
 
+
 const Projects = () => (
   <div className={styles.container}>
-    <h2 className={styles.projectsTitle}>My Recent Work</h2>
+    <h2 className={styles.projectsTitle}>Recent Projects</h2>
 
     {Array.from(PROJECT_DETAILS.keys()).map((val, index) => (
       <ProjectBox key={index} packages={PROJECT_DETAILS[val].packages} filters={PROJECT_DETAILS[val].languages} icon={PROJECT_DETAILS[val].icon_path} alt_icon_name = {PROJECT_DETAILS[val].alt_name} github_link = {PROJECT_DETAILS[val].github_link} name = {PROJECT_DETAILS[val].name} catchphrase = {PROJECT_DETAILS[val].catchphrase} description = {PROJECT_DETAILS[val].bulletpoints}/>

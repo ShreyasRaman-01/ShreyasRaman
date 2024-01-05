@@ -4,6 +4,8 @@ import HTMLTag from "../../icons/HTMLTag";
 import Java from "../../icons/Java";
 import MATLAB from "../../icons/MATLAB";
 import Python from "../../icons/Python";
+import Go from "../../icons/Go";
+import Solidity from "../../icons/Solidity";
 import ReactIcon from "../../icons/ReactIcon";
 import CircularProgress from "../CircularProgress";
 import styles from "./index.module.css";
@@ -19,8 +21,10 @@ interface Skillset {
 const SKILLSET: Array<Skillset> = [
   { name: "Python", percent: [0, 80], icon: <Python /> },
   { name: "Java", percent: [0, 70], icon: <Java /> },
-  { name: "C", percent: [0, 60], icon: <C /> },
-  { name: "HTML/CSS", percent: [0, 75], icon: <HTMLTag /> },
+  { name: "Go", percent: [0,75], icon: <Go />},
+  { name: "Solidity", percent: [0, 60], icon: <Solidity />},
+  { name: "C", percent: [0, 50], icon: <C /> },
+  // { name: "HTML/CSS", percent: [0, 75], icon: <HTMLTag /> },
   { name: "MATLAB", percent: [0, 70], icon: <MATLAB /> },
   { name: "REACT", percent: [0, 40], icon: <ReactIcon /> },
 ];
@@ -47,29 +51,29 @@ const Skills = () => {
             <MLBrain />
           </span>
 
-          <h2 className={styles.title}>Machine Learning</h2>
+          <h2 className={styles.title}>AI + Autonomous Agents</h2>
 
           {/* <p className={styles.description}>
           I value simple content structure, clean design patterns, and thoughtful interactions.
           </p> */}
 
           <div className={styles.section}>
-            <h3 className={styles.sectionTitle}>Problems I like solving:</h3>
+            <h3 className={styles.sectionTitle}>Problems I like tackling:</h3>
 
             <span className={styles.subsetValues}>
-              Object Detection, Object Segmentation, Genetic Algorithms, Q-Learning
+              Skill Learning, Causal Reasoning, Planning, Object Segmentation, Multimodal Representations
             </span>
           </div>
 
           <div className={styles.section}>
-            <h3 className={styles.sectionTitle}>Machine Learning Tools</h3>
+            <h3 className={styles.sectionTitle}>Subfields of Interest</h3>
 
             <ul className={styles.toolList}>
               <li className={styles.toolListItem}>Computer Vision</li>
               <li className={styles.toolListItem}>Reinforcement Learning</li>
               <li className={styles.toolListItem}> Natural Language Processing (NLP)</li>
               <li className={styles.toolListItem}>Deep Learning</li>
-              <li className={styles.toolListItem}>Neural Networks</li>
+              <li className={styles.toolListItem}>Foundation Models (LLMs & VLMs)</li>
               <li className={styles.toolListItem}>Halfspaces</li>
               <li className={styles.toolListItem}>Naive Bayes</li>
               <li className={styles.toolListItem}>Logistic Regression</li>
@@ -88,7 +92,7 @@ const Skills = () => {
           </p> */}
 
           <div className={styles.section}>
-            <h3 className={styles.sectionTitle}>Problems I like solving:</h3>
+            <h3 className={styles.sectionTitle}>Problems I like tackling:</h3>
 
             <span className={styles.subsetValues}>
               Model Selection, Predictive Modelling, EDA, Decisions with Data 
@@ -115,26 +119,25 @@ const Skills = () => {
             <Design />
           </span>
 
-          <h2 className={styles.title}>Software Engineering</h2>
+          <h2 className={styles.title}>Software Development</h2>
 
           {/* <p className={styles.description}>
           I like developing from scratch and value the integration of inelligence with software to elevate the user's experience.
           </p> */}
 
           <div className={styles.section}>
-            <h3 className={styles.sectionTitle}>Things I enjoy designing:</h3>
+            <h3 className={styles.sectionTitle}>Things I enjoy developing:</h3>
 
             <span className={styles.subsetValues}>
-              UI/UX, Websites, WebApps, Game Applications 
+              Websites, WebApps, Web Game Applications 
             </span>
           </div>
 
           <div className={styles.section}>
-            <h3 className={styles.sectionTitle}>Software Design Tools</h3>
+            <h3 className={styles.sectionTitle}>Software Development Tools</h3>
 
             <ul className={styles.toolList}>
-              <li className={styles.toolListItem}>Full-Stack Development</li>
-              <li className={styles.toolListItem}>Atom</li>
+              <li className={styles.toolListItem}>VSCode</li>
               <li className={styles.toolListItem}>GitHub</li>
               <li className={styles.toolListItem}>Terminal</li>
               <li className={styles.toolListItem}>CodePen</li>

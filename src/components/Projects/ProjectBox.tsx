@@ -28,9 +28,9 @@ const ProjectBox: React.FC<Props> = ({ packages, filters, icon, alt_icon_name, n
   const [selectedFilters, setFilters] = useState<Array<Filters>>([]);
 
   const onOptionSelect = useCallback(
-    (packageItem) => {
+    (packageItem: Filters) => {
       const currentItemIndex = selectedPackages.findIndex(
-        (item) => item.name === packageItem.name
+        (item: any) => item.name === packageItem.name
       );
 
       if (currentItemIndex > -1) {
@@ -47,9 +47,9 @@ const ProjectBox: React.FC<Props> = ({ packages, filters, icon, alt_icon_name, n
   );
 
   const onPillClick = useCallback(
-    (filter) => {
+    (filter: Filters) => {
       const currentItemIndex = selectedFilters.findIndex(
-        (item) => item.name === filter.name
+        (item: any) => item.name === filter.name
       );
 
       if (currentItemIndex > -1) {

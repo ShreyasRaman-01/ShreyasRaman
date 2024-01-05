@@ -25,33 +25,28 @@ class AboutCard extends Component {
     <ul>
       <li>
         {" "}
-        Rising junior pursuing an ScB in{" "}
-        <b>Computer Science @ Brown University</b>{" "}
+        Recently graduated: <b>ScB (with Honors) in Computer Science</b> @ Brown University {" "}
       </li>
       <li>
         {" "}
-        ❤️ everything about ML: Decision Trees, Comp. Vision, NLP, Reinforcement
-        Learning{" "}
+        Was fortunate to work on exciting research with under the BigAI initiative with <b><a href="https://h2r.cs.brown.edu/people/" style={{color:"black", textDecoration:"none"}}>Prof. Stefanie Tellex</a></b> and <b><a href="https://cs.brown.edu/people/gdk/index.html" style={{color:"black", textDecoration:"none"}}>Prof. George Konidaris</a></b> and with <b><a href="https://serre-lab.clps.brown.edu/person/thomas-serre/" style={{color:"black", textDecoration:"none"}}>Prof. Thomas Serre</a></b>
       </li>
       <li>
         {" "}
-        Tenacious <b>ML researcher</b>, ML <b>model tinkerer</b> and{" "}
-        <b>optimizer</b>{" "}
+        I ❤️ everything about multimodal AI and traditional ML: Comp. Vision, NLP, RL and Decision Trees. Especially their applications to autonomous agents and robots
+        {" "}
       </li>
       <li>
         {" "}
-        Frequent <b>chess player</b>: main the Sicilian Defence [hmu
-        @shreyasraman on chess.com]
-      </li>
-      <li>
-        {" "}
-        Always eager to <b>explore the unknown</b>, <b>learn something new</b>{" "}
+        Outside of this, I am always eager to <b>explore the unknown</b>, <b>learn something new</b> {" "}
         and <b>help others</b> along the way 😃{" "}
       </li>
-      <li> From the land of 🌶 and 🐯</li>
       <li>
         {" "}
-        🏀, 🏓 and <b>poetry</b> enthusiast{" "}
+        I competitively play chess [@shreyasraman on chess.com] and like to play 🏀, 🏓
+      </li>
+      <li>
+        I also dabble with creative writing + poetry and blockchain technology
       </li>
     </ul>
   );
@@ -60,31 +55,26 @@ class AboutCard extends Component {
   about_me_long_content = (
     <p style={clicked_paragraph_style}>
       {" "}
-      Hey there! I'm Shreyas, nice to meet you. <br />
-      <br /> I am an aspiring <b>ML researcher and software engineer</b>, eager
-      to help fundamentally transform people's interaction with technology by
-      leveraging the power of AI and data. I have always enjoyed
-      physics/mechanics, but in my very first semester at Brown, I{" "}
+      Hey there, welcome to my website! My name is Shreyas. <br />
+      <br /> I am a <b>researcher and software developer</b>, eager
+      to enable human-like reasoning and better conceptual abstractions using the power of multimodal AI and big data with autonomous agents. I have always enjoyed
+      physics/mechanics, but in my first semester at Brown, I{" "}
       <b>
-        explored a completely new world (to me) of computer science and fell in
-        love
+        fell in love with a completely new world of computer science
       </b>
       . <br />
-      <br /> Over the past 2 years, I have cultivated a{" "}
+      <br /> During my undergraduate degree, I have cultivated a{" "}
       <b>
-        strong passion for programming and machine learning - computer vision
-        and deep learning in particular
+        strong passion for programming and artificial intelligence - multimodal AI like computer vision or natural language processing applied with reinforcement learning and deep learning in particular
       </b>
-      . Thanks to my courses, I now "speak" <b>Python, Java, MATLAB and C</b>{" "}
-      and I am self-taught in <b>SQL, HTML, Javascript and Typescript</b> :){" "}
-      <br /> I have done some interesting projects + research with these; check
-      them out below! <br />
-      <br /> Aside from this, I am actively involved in{" "}
-      <b>Brown's Chess + Table Tennis clubs</b>, I have supported the{" "}
-      <b>"Space Engineering"</b> group in some of our recent CubeSAT missions
-      and I help students in Providence highschools to accelerate their
-      learning. I enjoy being at the seams between the digital/physical worlds
-      and want to use ML to revolutionize (and blur) the lines between them.{" "}
+      . Thanks to my courses, I now know <b>Python, Java, MATLAB, Solidity, Go and C</b>{" "}
+      and am self-taught in <b>SQL, HTML, Javascript and Typescript</b> :){" "}
+      <br /> I had the opportunity to do some interesting projects + research in these areas, check them out below! <br />
+      <br /> Aside from this, I was actively involved in{" "}
+      <b>Brown's Chess + Table Tennis clubs</b>; I supported the{" "}
+      <b>"Brown Space Engineering" (BSE)</b> group with CubeSAT missions,  served as a head teaching assistant and Mieklejohn peer mentor. I also helped students in Providence highschools to accelerate their
+      learning. I enjoy working on the seams between the digital/physical worlds
+      and want to use multimodal AI to blend the lines between them.{" "}
     </p>
   );
 
@@ -128,7 +118,7 @@ class AboutCard extends Component {
             <h3> Shreyas' Fun Facts : </h3>
             <ul>
               <li>
-                My to-go Pokémon Team: <b>Lapras</b>, <b>Shedinja</b>, <b>Lucario</b>{" "}
+                My to-go Pokémon Team includes: <b>Lapras</b>, <b>Shedinja</b>, <b>Lucario</b>{" "}
                 and <b>Linoone</b>
               </li>
               <li>
@@ -137,7 +127,7 @@ class AboutCard extends Component {
               <li>
                 <b>Pani Puri</b> is the best Chaat
               </li>
-              <li>I <b>write</b> with my <b><i>right</i></b> and am <b>deft</b> with my <b><i>left</i></b>!</li>
+              <li>I am ambidextrous!</li>
 
               <li> I'm a 🐶 person: adore <b>GSDs</b></li>
             </ul>

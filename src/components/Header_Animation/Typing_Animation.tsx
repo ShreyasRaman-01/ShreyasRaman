@@ -17,8 +17,9 @@ const TypeAnimation = () => {
               delay: 70,
 
               strings: [
+                "❤️ multimodal AI",
                 "am a machine learning researcher",
-                "❤️ data + data science",
+                "like tinkering with robots 🤖",
                 "enjoy software development",
                 "am an avid chess player ♟️",
                 "play the guitar 🎸",
