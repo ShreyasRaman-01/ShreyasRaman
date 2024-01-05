@@ -23,7 +23,7 @@ interface Props {
 
 //Project Box class containing all the elements for a single project box
 const WorkExpBox: React.FC<Props> = ({ filters, icon, alt_icon_name, name, description, position_and_dates}) => {
-  const [selectedPackages, setPackages] = useState<Array<Filters>>([]);
+  // const [selectedPackages, setPackages] = useState<Array<Filters>>([]);
   const [selectedFilters, setFilters] = useState<Array<Filters>>([]);
 
   const onPillClick = useCallback(

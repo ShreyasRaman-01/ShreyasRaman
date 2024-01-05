@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, {useState } from "react";
 import Github from "../../icons/Github";
 // import Project_Tag_Bar from "./Project_Tags";
 
@@ -32,8 +32,8 @@ interface Props {
 
 //Research Box class containing all the elements for a single research box
 const ResearchBox: React.FC<Props> = ({submission_links, filters, icon, alt_icon_name, name, catchphrase, github_link }) => {
-  const [selectedPackages, setPackages] = useState<Array<Filters>>([]);
-  const [selectedFilters, setFilters] = useState<Array<Filters>>([]);
+  const [selectedPackages] = useState<Array<Filters>>([]);
+  const [selectedFilters] = useState<Array<Filters>>([]);
 
   return (
     //div containing the project box

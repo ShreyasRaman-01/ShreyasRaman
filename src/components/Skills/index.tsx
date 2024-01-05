@@ -1,6 +1,6 @@
 import C from "../../icons/C";
 import Design from "../../icons/Design";
-import HTMLTag from "../../icons/HTMLTag";
+// import HTMLTag from "../../icons/HTMLTag";
 import Java from "../../icons/Java";
 import MATLAB from "../../icons/MATLAB";
 import Python from "../../icons/Python";
