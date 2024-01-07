@@ -191,62 +191,63 @@ const SUBMISSIONS: Array<LinkFilters> = [
   {
     id: 0,
     name: "ArXiv",
-    color: "#6BB243",
+    color: "#8D70FF",
     link: null,
   },
   {
     id: 1,
     name: "AAAI 2024",
-    color: "#F76906",
+    color: "#A166FF",
     link: null,
   },
 
   {
     id: 2,
     name: "ICRA 2024",
-    color: "#9619C9",
+    color: "#E949B9",
     link: null,
   },
   {
     id: 3,
     name: "LangRob @ CoRL 2023",
-    color: "#3D95CB",
+    color: "#8599FF",
     link: null,
   },
   {
     id: 4,
     name: "FMDM @ NeurIPS 2022",
-    color: "#4A41B0",
+    color: "#7D7AFF",
     link: null,
   },
   {
     id: 5,
     name: "CV4Smalls @ WACV 2024",
-    color: "#9619C9",
+    color: "#FF81F0",
     link: null,
   },
   {
     id: 6,
     name: "Animal Behavior",
-    color: "#CDBE25",
+    color: "#D452FF",
     link: null,
   },
   {
     id: 7,
     name: "RSS 2024",
-    color: "#d10d0d",
+    color: "#7D7AFF",
     link: null,
   },
   {
     id: 8,
     name: "Brown University Archive",
-    color: "#581845",
+    // color: "#581845",
+    color: "#B77195",
     link: null,
   },
   {
     id: 9, 
     name: "ICLR 2024",
-    color: "#003970",
+    color: "#FF81F0",
     link: null,
   },
   {
@@ -258,7 +259,7 @@ const SUBMISSIONS: Array<LinkFilters> = [
   {
     id: 11,
     name: "Website",
-    color: "#C4C4C4",
+    color: "#BDC4FF",
     link: null,
   }
 

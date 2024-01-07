@@ -29,17 +29,17 @@ class AboutCard extends Component {
       </li>
       <li>
         {" "}
-        Was fortunate to work on exciting research with under the BigAI initiative with <b><a href="https://h2r.cs.brown.edu/people/" style={{color:"black", textDecoration:"none"}}>Prof. Stefanie Tellex</a></b> and <b><a href="https://cs.brown.edu/people/gdk/index.html" style={{color:"black", textDecoration:"none"}}>Prof. George Konidaris</a></b> and with <b><a href="https://serre-lab.clps.brown.edu/person/thomas-serre/" style={{color:"black", textDecoration:"none"}}>Prof. Thomas Serre</a></b>
+        Was fortunate to work on exciting research under the BigAI initiative with <b><a href="https://h2r.cs.brown.edu/people/" style={{color:"black", textDecoration:"none"}}>Prof. Stefanie Tellex</a></b> and <b><a href="https://cs.brown.edu/people/gdk/index.html" style={{color:"black", textDecoration:"none"}}>Prof. George Konidaris</a></b> and with <b><a href="https://serre-lab.clps.brown.edu/person/thomas-serre/" style={{color:"black", textDecoration:"none"}}>Prof. Thomas Serre</a></b> in Serre Labs
       </li>
       <li>
         {" "}
-        I ❤️ everything about multimodal AI and traditional ML: Comp. Vision, NLP, RL and Decision Trees. Especially their applications to autonomous agents and robots
+        I ❤️ everything about <b>multimodal AI and ML</b>: Comp. Vision, NLP, RL and Decision Trees. Especially their <b>applications to autonomous agents and robots</b>
         {" "}
       </li>
       <li>
         {" "}
-        Outside of this, I am always eager to <b>explore the unknown</b>, <b>learn something new</b> {" "}
-        and <b>help others</b> along the way 😃{" "}
+        Outside of this, I am always eager to explore the unknown,learn something new {" "}
+        and help others along the way 😃{" "}
       </li>
       <li>
         {" "}
@@ -122,14 +122,14 @@ class AboutCard extends Component {
                 and <b>Linoone</b>
               </li>
               <li>
-                I absolutely love <b>Middle Eastern</b> and <b>Italian</b> food!
+                Absolutely love <b>Middle Eastern</b> and <b>Italian</b> food!
               </li>
               <li>
                 <b>Pani Puri</b> is the best Chaat
               </li>
-              <li>I am ambidextrous!</li>
+              <li>I'm ambidextrous!</li>
 
-              <li> I'm a 🐶 person: adore <b>GSDs</b></li>
+              <li> A 🐶 person: adore <b>GSDs</b></li>
             </ul>
             </div>
           </div>
