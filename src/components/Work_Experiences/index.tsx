@@ -73,7 +73,7 @@ const WORK_EXPERIENCE_DETAILS:  Array<WorkExperience> = [
     alt_name: "McKinsey & Co",
     position_and_dates: "Business Analyst Intern [Winter 2023/2024]",
     name: "McKinsey & Co.",
-    bulletpoints: ["Interned as a Business Analyst at McKinsey & Co. Dubai office"],
+    bulletpoints: ["Defined an AI vision, strategy and supporting operating model (supported by best-practices) for the B2B division of a large Telco in the MENA region"],
     language: [FILTERS[8]]
   },
   {
