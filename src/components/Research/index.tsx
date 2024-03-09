@@ -261,6 +261,12 @@ const SUBMISSIONS: Array<LinkFilters> = [
     name: "Website",
     color: "#BDC4FF",
     link: null,
+  },
+  {
+    id: 12,
+    name: "RLC 2024",
+    color: "#A166FF",
+    link: null,
   }
 
 ];
@@ -305,7 +311,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     icon_path: "media/cape_icon.png",
     alt_name: "CAPE",
     name: "CAPE: Corrective Actions from Precondition Errors using Large Language Models",
-    catchphrase: "First Author | LangRob @ CoRL, Under Review @ ICRA 2024 | Honors Thesis",
+    catchphrase: "First Author | LangRob @ CoRL, ICRA 2024 | Honors Thesis",
     //bulletpoints: [],
     github_link: "https://www.github.com",
     submission_links: [updateLink(deepCopy(SUBMISSIONS[0]),"https://arxiv.org/abs/2211.09935"),updateLink(deepCopy(SUBMISSIONS[3]), 'https://openreview.net/forum?id=LW2YwzqKKP&nesting=2&sort=date-desc'), SUBMISSIONS[2], updateLink(SUBMISSIONS[4], 'https://openreview.net/forum?id=cMDMRBe1TKs'), updateLink(SUBMISSIONS[11],'https://shreyas-s-raman.github.io/CAPE/')],
@@ -315,7 +321,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     icon_path: "media/safety_chip_icon.png",
     alt_name: "safety_chip_icon",
     name: "Plug in The Safety Chip: Enforcing Constraints for LLM-driven Robot Agents",
-    catchphrase: "Co-Author | LangRob @ CoRL & Under Review @ ICRA 2024",
+    catchphrase: "Co-Author | LangRob @ CoRL, ICRA 2024",
     //bulletpoints: [],
     github_link: "https://www.github.com",
     submission_links: [updateLink(deepCopy(SUBMISSIONS[0]),'https://arxiv.org/abs/2309.09919'), updateLink(deepCopy(SUBMISSIONS[3]), 'https://openreview.net/forum?id=INvxF4iQ34&nesting=2&sort=date-desc'), SUBMISSIONS[2]],
@@ -325,10 +331,10 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     icon_path: "media/tiered_learning_icon.png",
     alt_name: "Tiered Rewards",
     name: "Tiered Reward Functions: Specifying and Fast Learning of Desired Behavior",
-    catchphrase: "Co-Author | Under Review @ AAAI 2024",
+    catchphrase: "Co-Author | Under Review @ RLC 2024",
     //bulletpoints: [ ],
     github_link: "https://www.github.com",
-    submission_links: [SUBMISSIONS[0], SUBMISSIONS[1]],
+    submission_links: [SUBMISSIONS[0], SUBMISSIONS[12]],
     topics_and_libraries: [TOPICS_LIBRARIES[11],TOPICS_LIBRARIES[24], TOPICS_LIBRARIES[25]]
   },
   {
@@ -371,17 +377,6 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     submission_links: [SUBMISSIONS[9]],
     topics_and_libraries: [TOPICS_LIBRARIES[1], TOPICS_LIBRARIES[12], TOPICS_LIBRARIES[13],TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[18], TOPICS_LIBRARIES[31]]
 
-  },
-
-  {
-    icon_path: "media/open_vocab_icon.png",
-    alt_name: "Open Vocab",
-    name: "Open Vocabulary Robot Instructions with Pre-Trained VLMs",
-    catchphrase: "Co-Author | In Preparation for RSS 2024",
-    //bulletpoints: [],
-    github_link: "https://www.github.com",
-    submission_links: [SUBMISSIONS[7]],
-    topics_and_libraries: [TOPICS_LIBRARIES[3], TOPICS_LIBRARIES[4], TOPICS_LIBRARIES[13],TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[18], TOPICS_LIBRARIES[30]]
   },
 
   {
