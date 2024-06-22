@@ -196,7 +196,7 @@ const SUBMISSIONS: Array<LinkFilters> = [
   },
   {
     id: 1,
-    name: "AAAI 2024",
+    name: "RLC 2024",
     color: "#F76906",
     link: null,
   },
@@ -260,7 +260,19 @@ const SUBMISSIONS: Array<LinkFilters> = [
     name: "Website",
     color: "#C4C4C4",
     link: null,
-  }
+  },
+  {
+    id: 12,
+    name: "NeurIPS 2024",
+    color: "#4A41B0",
+    link: null,
+  },
+  {
+    id: 13,
+    name: "ICRA 2025",
+    color: "#9619C9",
+    link: null,
+  },
 
 ];
 
@@ -290,6 +302,25 @@ function deepCopy<T>(obj: T): T {
 }
 
 const RESEARCH_DETAILS:  Array<ResearchDetails> = [
+
+  {
+    icon_path: "media/skill_wrapper.png",
+    alt_name: "Skill Wrapper",
+    name: "SkillWrapper: Symbolize and Adapt Robotic Skills for Planning with Foundation Models",
+    catchphrase: "Co-First Author | In-Preparation for ICRA 2025",
+    github_link: "https://github.com",
+    submission_links: [SUBMISSIONS[13],
+    topics_and_libraries: [TOPICS_LIBRARIES[3], TOPICS_LIBRARIES[4], TOPICS_LIBRARIES[13], TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[16], TOPICS_LIBRARIES[18], TOPICS_LIBRARIES[21], TOPICS_LIBRARIES[26], TOPICS_LIBRARIES[30], TOPICS_LIBRARIES[32]]
+  },
+  {
+    icon_path: "media/lanmp.png",
+    alt_name: "LaNMP Dataset",
+    name: "LaNMP: A Language-Conditioned Mobile Manipulation Benchmark for Autonomous Robots",
+    catchphrase: "Co-Author | NeurIPS 2024 - Dataset & Benchmark Track",
+    github_link: "https://github.com/h2r/LaNPM-Dataset",
+    submission_links: [updateLink(deepCopy(SUBMISSIONS[11]), 'https://lanmpdataset.github.io/'), SUBMISSIONS[12]],
+    topics_and_libraries: [TOPICS_LIBRARIES[3], TOPICS_LIBRARIES[4], TOPICS_LIBRARIES[13], TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[16], TOPICS_LIBRARIES[18], TOPICS_LIBRARIES[21], TOPICS_LIBRARIES[26], TOPICS_LIBRARIES[30], TOPICS_LIBRARIES[32]]
+  },
   {
     icon_path: "media/dog_icon.png",
     alt_name:"Dog Vision",
@@ -304,7 +335,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     icon_path: "media/cape_icon.png",
     alt_name: "CAPE",
     name: "CAPE: Corrective Actions from Precondition Errors using Large Language Models",
-    catchphrase: "First Author | LangRob @ CoRL, Under Review @ ICRA 2024 | Honors Thesis",
+    catchphrase: "First Author | LangRob @ CoRL, ICRA 2024 | Honors Thesis",
     //bulletpoints: [],
     github_link: "https://www.github.com",
     submission_links: [updateLink(deepCopy(SUBMISSIONS[0]),"https://arxiv.org/abs/2211.09935"),updateLink(deepCopy(SUBMISSIONS[3]), 'https://openreview.net/forum?id=LW2YwzqKKP&nesting=2&sort=date-desc'), SUBMISSIONS[2], updateLink(SUBMISSIONS[4], 'https://openreview.net/forum?id=cMDMRBe1TKs'), updateLink(SUBMISSIONS[11],'https://shreyas-s-raman.github.io/CAPE/')],
@@ -314,7 +345,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     icon_path: "media/safety_chip_icon.png",
     alt_name: "safety_chip_icon",
     name: "Plug in The Safety Chip: Enforcing Constraints for LLM-driven Robot Agents",
-    catchphrase: "Co-Author | LangRob @ CoRL & Under Review @ ICRA 2024",
+    catchphrase: "Co-Author | LangRob @ CoRL & ICRA 2024",
     //bulletpoints: [],
     github_link: "https://www.github.com",
     submission_links: [updateLink(deepCopy(SUBMISSIONS[0]),'https://arxiv.org/abs/2309.09919'), updateLink(deepCopy(SUBMISSIONS[3]), 'https://openreview.net/forum?id=INvxF4iQ34&nesting=2&sort=date-desc'), SUBMISSIONS[2]],
@@ -324,7 +355,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     icon_path: "media/tiered_learning_icon.png",
     alt_name: "Tiered Rewards",
     name: "Tiered Reward Functions: Specifying and Fast Learning of Desired Behavior",
-    catchphrase: "Co-Author | Under Review @ AAAI 2024",
+    catchphrase: "Co-Author | RLC 2024",
     //bulletpoints: [ ],
     github_link: "https://www.github.com",
     submission_links: [SUBMISSIONS[0], SUBMISSIONS[1]],
@@ -372,16 +403,6 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
 
   },
 
-  {
-    icon_path: "media/open_vocab_icon.png",
-    alt_name: "Open Vocab",
-    name: "Open Vocabulary Robot Instructions with Pre-Trained VLMs",
-    catchphrase: "Co-Author | In Preparation for RSS 2024",
-    //bulletpoints: [],
-    github_link: "https://www.github.com",
-    submission_links: [SUBMISSIONS[7]],
-    topics_and_libraries: [TOPICS_LIBRARIES[3], TOPICS_LIBRARIES[4], TOPICS_LIBRARIES[13],TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[18], TOPICS_LIBRARIES[30]]
-  },
 
   {
     icon_path: "media/recap_icon.png",
