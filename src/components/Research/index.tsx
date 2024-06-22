@@ -309,7 +309,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     name: "SkillWrapper: Symbolize and Adapt Robotic Skills for Planning with Foundation Models",
     catchphrase: "Co-First Author | In-Preparation for ICRA 2025",
     github_link: "https://github.com",
-    submission_links: [SUBMISSIONS[13],
+    submission_links: [SUBMISSIONS[13]],
     topics_and_libraries: [TOPICS_LIBRARIES[3], TOPICS_LIBRARIES[4], TOPICS_LIBRARIES[13], TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[16], TOPICS_LIBRARIES[18], TOPICS_LIBRARIES[21], TOPICS_LIBRARIES[26], TOPICS_LIBRARIES[30], TOPICS_LIBRARIES[32]]
   },
   {
