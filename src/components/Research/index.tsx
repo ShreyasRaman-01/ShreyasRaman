@@ -181,7 +181,49 @@ const TOPICS_LIBRARIES: Array<Filters> = [
     name: "SayCan (Baseline)",
     color:"#E6EAEA"
 
-  }
+  },
+  {
+    id: 33,
+    name: "OpenAI: GPT4",
+    color:"#E6EAEA"
+
+  },
+  {
+    id: 34,
+    name: "Google: Gemini",
+    color:"#E6EAEA"
+
+  },
+  {
+    id: 35,
+    name: "LaVa",
+    color:"#E6EAEA"
+
+  },
+  {
+    id: 36,
+    name: "InstructBlip",
+    color:"#E6EAEA"
+
+  },
+  {
+    id: 37,
+    name: "AI2Thor",
+    color:"#E6EAEA"
+
+  },
+   {
+    id: 38,
+    name: "Google: RT1",
+    color:"#E6EAEA"
+
+  },
+   {
+    id: 39,
+    name: "ALFRED",
+    color:"#E6EAEA"
+
+  },
 
 
 
@@ -316,7 +358,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     catchphrase: "Co-First Author | In-Preparation for ICRA 2025",
     github_link: "https://github.com",
     submission_links: [SUBMISSIONS[13]],
-    topics_and_libraries: [TOPICS_LIBRARIES[3], TOPICS_LIBRARIES[4], TOPICS_LIBRARIES[13], TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[16], TOPICS_LIBRARIES[18], TOPICS_LIBRARIES[21], TOPICS_LIBRARIES[26], TOPICS_LIBRARIES[30], TOPICS_LIBRARIES[32]]
+    topics_and_libraries: [TOPICS_LIBRARIES[3], TOPICS_LIBRARIES[4], TOPICS_LIBRARIES[13], TOPICS_LIBRARIES[14],TOPICS_LIBRARIES[33],TOPICS_LIBRARIES[34],TOPICS_LIBRARIES[35],TOPICS_LIBRARIES[36], TOPICS_LIBRARIES[37]]
   },
   {
     icon_path: "media/lanmp.png",
@@ -325,7 +367,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     catchphrase: "Co-Author | Under Review @ NeurIPS 2024 - Dataset & Benchmark Track",
     github_link: "https://github.com/h2r/LaNPM-Dataset",
     submission_links: [updateLink(deepCopy(SUBMISSIONS[11]), 'https://lanmpdataset.github.io/'), SUBMISSIONS[14]],
-    topics_and_libraries: [TOPICS_LIBRARIES[3], TOPICS_LIBRARIES[4], TOPICS_LIBRARIES[13], TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[16], TOPICS_LIBRARIES[18], TOPICS_LIBRARIES[21], TOPICS_LIBRARIES[26], TOPICS_LIBRARIES[30], TOPICS_LIBRARIES[32]]
+    topics_and_libraries: [TOPICS_LIBRARIES[3], TOPICS_LIBRARIES[4], TOPICS_LIBRARIES[13], TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[37],TOPICS_LIBRARIES[38], TOPICS_LIBRARIES[39]]
   },
   {
     icon_path: "media/dog_icon.png",
