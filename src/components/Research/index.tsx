@@ -196,7 +196,7 @@ const SUBMISSIONS: Array<LinkFilters> = [
   },
   {
     id: 1,
-    name: "AAAI 2024",
+    name: "RLC 2024",
     color: "#A166FF",
     link: null,
   },
@@ -267,7 +267,19 @@ const SUBMISSIONS: Array<LinkFilters> = [
     name: "RLC 2024",
     color: "#A166FF",
     link: null,
-  }
+  },
+  {
+    id: 13,
+    name: "ICRA 2025",
+    color: "#E949B9",
+    link: null,
+  },
+  {
+    id: 14,
+    name: "NeurIPS 2024",
+    color: "#7D7AFF",
+    link: null,
+  },
 
 ];
 
@@ -297,6 +309,24 @@ function deepCopy<T>(obj: T): T {
 }
 
 const RESEARCH_DETAILS:  Array<ResearchDetails> = [
+   {
+    icon_path: "media/skill_wrapper.png",
+    alt_name: "Skill Wrapper",
+    name: "SkillWrapper: Symbolize and Adapt Robotic Skills for Planning with Foundation Models",
+    catchphrase: "Co-First Author | In-Preparation for ICRA 2025",
+    github_link: "https://github.com",
+    submission_links: [SUBMISSIONS[13]],
+    topics_and_libraries: [TOPICS_LIBRARIES[3], TOPICS_LIBRARIES[4], TOPICS_LIBRARIES[13], TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[16], TOPICS_LIBRARIES[18], TOPICS_LIBRARIES[21], TOPICS_LIBRARIES[26], TOPICS_LIBRARIES[30], TOPICS_LIBRARIES[32]]
+  },
+  {
+    icon_path: "media/lanmp.png",
+    alt_name: "LaNMP Dataset",
+    name: "LaNMP: A Language-Conditioned Mobile Manipulation Benchmark for Autonomous Robots",
+    catchphrase: "Co-Author | Under Review @ NeurIPS 2024 - Dataset & Benchmark Track",
+    github_link: "https://github.com/h2r/LaNPM-Dataset",
+    submission_links: [updateLink(deepCopy(SUBMISSIONS[11]), 'https://lanmpdataset.github.io/'), SUBMISSIONS[14]],
+    topics_and_libraries: [TOPICS_LIBRARIES[3], TOPICS_LIBRARIES[4], TOPICS_LIBRARIES[13], TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[16], TOPICS_LIBRARIES[18], TOPICS_LIBRARIES[21], TOPICS_LIBRARIES[26], TOPICS_LIBRARIES[30], TOPICS_LIBRARIES[32]]
+  },
   {
     icon_path: "media/dog_icon.png",
     alt_name:"Dog Vision",
@@ -331,7 +361,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     icon_path: "media/tiered_learning_icon.png",
     alt_name: "Tiered Rewards",
     name: "Tiered Reward Functions: Specifying and Fast Learning of Desired Behavior",
-    catchphrase: "Co-Author | Under Review @ RLC 2024",
+    catchphrase: "Co-Author | RLC 2024",
     //bulletpoints: [ ],
     github_link: "https://www.github.com",
     submission_links: [SUBMISSIONS[0], SUBMISSIONS[12]],
