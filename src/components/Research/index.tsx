@@ -425,7 +425,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     catchphrase: "First Author | LangRob @ CoRL 2023, ICRA 2024 | Honors Thesis",
     //bulletpoints: [],
     github_link: "https://www.github.com",
-    submission_links: [updateLink(deepCopy(SUBMISSIONS[0]),"https://arxiv.org/abs/2211.09935"),updateLink(deepCopy(SUBMISSIONS[3]), 'https://openreview.net/forum?id=LW2YwzqKKP&nesting=2&sort=date-desc'), SUBMISSIONS[2], updateLink(SUBMISSIONS[4], 'https://openreview.net/forum?id=cMDMRBe1TKs'), updateLink(SUBMISSIONS[11],'https://shreyas-s-raman.github.io/CAPE/')],
+    submission_links: [updateLink(deepCopy(SUBMISSIONS[0]),"https://arxiv.org/abs/2211.09935"),updateLink(deepCopy(SUBMISSIONS[3]), 'https://openreview.net/forum?id=LW2YwzqKKP&nesting=2&sort=date-desc'), SUBMISSIONS[2], updateLink(deepCopy(SUBMISSIONS[4]), 'https://openreview.net/forum?id=cMDMRBe1TKs'), updateLink(deepCopy(SUBMISSIONS[11]),'https://shreyas-s-raman.github.io/CAPE/')],
     topics_and_libraries: [TOPICS_LIBRARIES[3], TOPICS_LIBRARIES[4], TOPICS_LIBRARIES[13], TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[16], TOPICS_LIBRARIES[18], TOPICS_LIBRARIES[21], TOPICS_LIBRARIES[26], TOPICS_LIBRARIES[30], TOPICS_LIBRARIES[32]]
   },
   {
@@ -435,7 +435,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     catchphrase: "Co-Author | LangRob @ CoRL, ICRA 2024",
     //bulletpoints: [],
     github_link: "https://www.github.com",
-    submission_links: [updateLink(deepCopy(SUBMISSIONS[0]),'https://arxiv.org/abs/2309.09919'), updateLink(deepCopy(SUBMISSIONS[3]), 'https://openreview.net/forum?id=INvxF4iQ34&nesting=2&sort=date-desc'), SUBMISSIONS[2], updateLink(SUBMISSIONS[11], 'https://yzylmc.github.io/safety-chip/')],
+    submission_links: [updateLink(deepCopy(SUBMISSIONS[0]),'https://arxiv.org/abs/2309.09919'), updateLink(deepCopy(SUBMISSIONS[3]), 'https://openreview.net/forum?id=INvxF4iQ34&nesting=2&sort=date-desc'), SUBMISSIONS[2], updateLink(deepCopy(SUBMISSIONS[11]), 'https://yzylmc.github.io/safety-chip/')],
     topics_and_libraries: [TOPICS_LIBRARIES[3], TOPICS_LIBRARIES[4], TOPICS_LIBRARIES[13], TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[16], TOPICS_LIBRARIES[18], TOPICS_LIBRARIES[21], TOPICS_LIBRARIES[22], TOPICS_LIBRARIES[26], TOPICS_LIBRARIES[30]]
   },
   {
@@ -445,7 +445,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     catchphrase: "Co-Author | RLC 2024",
     //bulletpoints: [ ],
     github_link: "https://www.github.com",
-    submission_links: [SUBMISSIONS[0], SUBMISSIONS[12], updateLink(SUBMISSIONS[11], 'https://zhouzypaul.github.io/tiered_reward/')],
+    submission_links: [SUBMISSIONS[0], SUBMISSIONS[12], updateLink(deepCopy(SUBMISSIONS[11]), 'https://zhouzypaul.github.io/tiered_reward/')],
     topics_and_libraries: [TOPICS_LIBRARIES[11],TOPICS_LIBRARIES[24], TOPICS_LIBRARIES[25]]
   },
   {
@@ -465,7 +465,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     catchphrase: "Co-Author | ASPIRE HSEF 2024",
     //bulletpoints: [],
     github_link: "https://www.github.com",
-    submission_links: [SUBMISSIONS[18]],
+    submission_links: [updateLink(deepCopy(SUBMISSIONS[18]), 'https://hfesam2024.conference-program.com/presentation/?id=POS259&sess=sess108')],
     topics_and_libraries: [TOPICS_LIBRARIES[18],TOPICS_LIBRARIES[21], TOPICS_LIBRARIES[26], TOPICS_LIBRARIES[29], TOPICS_LIBRARIES[30], TOPICS_LIBRARIES[32]]
   },
   {
