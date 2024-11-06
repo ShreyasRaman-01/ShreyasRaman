@@ -69,6 +69,14 @@ const FILTERS: Array<Filters> = [
 
 const WORK_EXPERIENCE_DETAILS:  Array<WorkExperience> = [
   {
+    icon_path: "media/corl2024_icon.png",
+    alt_name: "LEAP @ CoRL 2024",
+    position_and_dates: "Reviewer [Fall 2024]",
+    name: "LEAP @ CoRL 2024",
+    bulletpoints: ["Requested to review papers for LEAP at CoRL 2024"],
+    language: [FILTERS[6], FILTERS[9]]
+  },
+  {
     icon_path: "media/mck_icon.jpeg",
     alt_name: "McKinsey & Co",
     position_and_dates: "Business Analyst Intern [Winter 2023/2024]",
