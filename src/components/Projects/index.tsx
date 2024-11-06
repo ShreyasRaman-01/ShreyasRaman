@@ -117,6 +117,40 @@ const PACKAGES: Array<Filters> = [
   {
     name: "Time",
     color:"#ACE38D"
+  },
+  {
+    name: "LiquidCrystal.h",
+    color: "#3c92e6"
+  },
+  {
+    name: "Servo.h",
+    color: "#3c92e6"
+  },
+  {
+    name: "GCLK Register",
+    color: "#3c92e6"
+  },
+  {
+    name: "TC3 Register",
+    color: "#3c92e6"
+  },
+  {
+    name: "Watch Dog Timer",
+    color: "#3c92e6"
+  },
+  {
+    name: "open3d",
+    color: "#ACE38D"
+
+  },
+  {
+    name: "bosdyn.client",
+    color: "#ACE38D"
+
+  },
+  {
+    name: "rospy",
+    color: "#ACE38D"
   }
 
 ];
@@ -158,11 +192,47 @@ const FILTERS: Array<Filters> = [
   {
     name: "Makefile",
     color: "#003970",
+  },  
+  {
+    name: "C++",
+    color: "#003970",
   }
 
 ];
 
 const PROJECT_DETAILS:  Array<ProjectDetails> = [
+  {
+    icon_path: "media/slang_icon.png",
+    alt_name:"SLANG",
+    name: "SLANG: Spot & Langauge",
+    catchphrase: "Spot Robot | ClipSeg | ROS | PointCloud",
+    bulletpoints: ['Integrated ClipSeg with a Spot robot for grasping arbitrary objects in an observed scene specified in natural language with modifiers e.g. “the large green cup”, “something healthy to eat”' ],
+    github_link: "https://www.github.com",
+    languages:[FILTERS[0]],
+    packages:[PACKAGES[2],PACKAGES[31],PACKAGES[32],PACKAGES[0]]
+  },
+
+  {
+    icon_path: "media/pidrone_icon.png",
+    alt_name:"PiDrone",
+    name: "RaspberryPi Drone",
+    catchphrase: "ROS System | Raspberry Pi | PID Controller | Visual SLAM | Optical Flow",
+    bulletpoints: ['Built, soldered and coded a drone using Raspberry Pi and ROS subscribers / publishers', 'Drone supports PID controller for autonomous altitude stabilization, optical flow estimation and visual SLAM localization using Unscented Kalman-Filters' ],
+    github_link: "https://www.github.com",
+    languages:[FILTERS[0], FILTERS[9]],
+    packages:[PACKAGES[1], PACKAGES[10], PACKAGES[0], PACKAGES[33]]
+  },
+
+  {
+    icon_path: "media/chromalock_icon.png",
+    alt_name:"ChromaLock",
+    name: "Chroma Lock: Key Pad Lock",
+    catchphrase: "Arduino | Embedded Systems | LCD Display Output",
+    bulletpoints: ['Numeric key-pad lock with an Arduino UNO, servo motors and capacitance buttons', 'Padlock supports passcode resets, 3 max passcode tries with lock timeouts, watchdog timer for idle autolocking, variable passcode lengths (upto 10 characters) and visual audio feedback'],
+    github_link: "https://www.github.com",
+    languages:[FILTERS[9]],
+    packages:[PACKAGES[26],PACKAGES[27],PACKAGES[28],PACKAGES[29],PACKAGES[30]]
+  },
   
   {
     icon_path: "media/paleoai_icon.png",
