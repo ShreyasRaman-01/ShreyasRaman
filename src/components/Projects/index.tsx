@@ -151,6 +151,14 @@ const PACKAGES: Array<Filters> = [
   {
     name: "rospy",
     color: "#ACE38D"
+  },
+  {
+    name: "PyTorch",
+    color: "#ACE38D",
+  },
+  {
+    name: "Google MediaPipe",
+    color: "#ACE38D",
   }
 
 ];
@@ -233,6 +241,19 @@ const PROJECT_DETAILS:  Array<ProjectDetails> = [
     languages:[FILTERS[9]],
     packages:[PACKAGES[26],PACKAGES[27],PACKAGES[28],PACKAGES[29],PACKAGES[30]]
   },
+
+
+  {
+    icon_path: "media/asl_detection.png",
+    alt_name:"American Sign Langauge Detection",
+    name: "ASL Detection",
+    catchphrase: "Pose Estimation | Faster-RCNN | ASL | Text-to-Speech (TTS)",
+    bulletpoints: ['Real-time letter based translation of american sign language (ASL) to english chracters using visual observation', 'Supports text to speech (TTS) options to dictate ASL inputs by users', 'Utilizes both Faster-RCNN and pose-estimation models for ASL classification'],
+    github_link: "https://www.github.com",
+    languages:[FILTERS[0]],
+    packages:[PACKAGES[1], PACKAGES[7], PACKAGES[10], PACKAGES[0],PACKAGES[34], PACKAGES[35]]
+  },
+
   
   {
     icon_path: "media/paleoai_icon.png",
