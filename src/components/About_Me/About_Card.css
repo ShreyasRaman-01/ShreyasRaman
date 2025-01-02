@@ -95,11 +95,17 @@ p {
   font-family: "Source-Code-Pro" sans-serif;
   margin-bottom: 1rem;
 }
+
   
 
 .recent-news-section h2 {
   font-weight: 600;
   font-size: 38px;
+}
+
+.about-card-content li{
+  font-size: 18px;
+  margin: 20px 0;
 }
 
 .about-card p {
