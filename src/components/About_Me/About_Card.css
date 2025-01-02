@@ -89,7 +89,7 @@ p {
   font-size: 38px;
 }
 
-.recent-news-section h2, li {
+.recent-news-section h2, ul li {
   text-align: left;
   color: black;
   font-family: "Source-Code-Pro" sans-serif;

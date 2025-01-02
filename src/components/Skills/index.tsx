@@ -42,12 +42,12 @@ const Skills = () => {
     <div className={styles.skillsPage}>
       <div className={styles.skillBar}>
         {SKILLSET.map(({ name, icon: Icon, percent, lines}) => (
-          <div key={name} className={styles.skillItem} onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}>
+          <div key={name} className={styles.skillItem}>
             <CircularProgress values={percent}>
-              <span className={styles.icon}>{Icon}</span>
+              <span className={styles.icon} onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}>{Icon}</span>
+              <div className="lines-written">{isHovered ? lines : ""}</div>
             </CircularProgress>
-            <div className="lines-written">{isHovered ? lines : ""}</div>
             <span className={styles.skillName}>{name}</span>
           </div>
         ))}

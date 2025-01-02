@@ -57,12 +57,11 @@ class AboutCard extends Component {
       physics/engineering, in my first semester at Brown University, I{" "}
       <b>fell in love with a completely new world of computer science.</b>
       <br /> Over undergrad, my <Link to="/research">research experience</Link> across 9 projects accepted at 6 conferences has cultivated a{" "}
-      <b>strong passion for multimodal AI (computer vision, natural language processing or reinforcement learning) applied to help agents/robots improve generalization to novel tasks, thereby making agents meaningfully independent and simplifying human-agent interactions.</b>
-      Several interesting <Link to="/projects"></Link>projects over this time have also made me familiar with <b>Python, Java, MATLAB, Solidity, Go and C</b>{" "}
+      <b>strong passion for multimodal AI (computer vision, natural language processing or reinforcement learning) applied to help agents/robots improve generalization to novel tasks, thereby making agents meaningfully independent and simplifying human-agent interactions.</b> Several interesting <Link to="/projects">projects</Link> over this time have also made me familiar with <b>Python, Java, MATLAB, Solidity, Go and C</b>{" "}
       and am self-taught in <b>SQL, HTML, Javascript and Typescript</b>. Please check them out!{" "}
       <br /> Aside from research, I am actively involved in{" "}
       <b>Brown's Chess club</b>; I supported the{" "}
-      <b>"Brown Space Engineering" (BSE)</b> group with CubeSAT missions; I served as a head TA for CSCI1410, Meiklejohn peer mentor and local tutor to highschool students in Providence; I also dabble in creative writing + poetry. I am keen to leverage my unique background to bridge my work beyond theory towards tangible impact.{" "}
+      <b>"Brown Space Engineering" (BSE)</b> group with CubeSAT missions; I served as a <b>head TA for CSCI1410</b>, <b>Meiklejohn</b> peer mentor and <b>tutor to local highschool students</b> in Providence; I also dabble in <Link to="/blog"><b>creative writing + poetry</b></Link>. I am keen to leverage my unique background to bridge my work beyond theory towards tangible impact.{" "}
     </p>
   );
 
@@ -124,7 +123,7 @@ class AboutCard extends Component {
         </div>
       </div>
 
-      // finally add recent news in the bottom
+      {/* finally add recent news in the bottom */}
       <div className="recent-news-section">
         <h2>Recent News</h2>
         <ul>
