@@ -87,6 +87,7 @@ p {
 .about-card h2 {
   font-weight: 600;
   font-size: 38px;
+  padding-left: 3rem;
 }
 
 .recent-news-section h2, ul li {
@@ -94,6 +95,7 @@ p {
   color: black;
   font-family: "Source-Code-Pro" sans-serif;
   margin-bottom: 1rem;
+  padding-left: 3rem;
 }
 
   
