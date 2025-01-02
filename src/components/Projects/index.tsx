@@ -226,7 +226,7 @@ const PROJECT_DETAILS:  Array<ProjectDetails> = [
     name: "RaspberryPi Drone",
     catchphrase: "ROS System | Raspberry Pi | PID Controller | Visual SLAM | Optical Flow",
     bulletpoints: ['Built, soldered and coded a drone using Raspberry Pi and ROS subscribers / publishers', 'Drone supports PID controller for autonomous altitude stabilization, optical flow estimation and visual SLAM localization using Unscented Kalman-Filters' ],
-    github_link: "https://www.github.com",
+    github_link: "https://github.com/Shreyas-S-Raman/duckietown-lx",
     languages:[FILTERS[0], FILTERS[9]],
     packages:[PACKAGES[1], PACKAGES[10], PACKAGES[0], PACKAGES[33]]
   },
@@ -237,7 +237,7 @@ const PROJECT_DETAILS:  Array<ProjectDetails> = [
     name: "Chroma Lock: Key Pad Lock",
     catchphrase: "Arduino | Embedded Systems | LCD Display Output",
     bulletpoints: ['Numeric key-pad lock with an Arduino UNO, servo motors and capacitance buttons', 'Padlock supports passcode resets, 3 max passcode tries with lock timeouts, watchdog timer for idle autolocking, variable passcode lengths (upto 10 characters) and visual audio feedback'],
-    github_link: "https://www.github.com",
+    github_link: "https://github.com/AbhyudayaSharma/ChromaLock",
     languages:[FILTERS[9]],
     packages:[PACKAGES[26],PACKAGES[27],PACKAGES[28],PACKAGES[29],PACKAGES[30]]
   },
@@ -249,7 +249,7 @@ const PROJECT_DETAILS:  Array<ProjectDetails> = [
     name: "ASL Detection",
     catchphrase: "Pose Estimation | Faster-RCNN | ASL | Text-to-Speech (TTS)",
     bulletpoints: ['Real-time letter based translation of american sign language (ASL) to english chracters using visual observation', 'Supports text to speech (TTS) options to dictate ASL inputs by users', 'Utilizes both Faster-RCNN and pose-estimation models for ASL classification'],
-    github_link: "https://www.github.com",
+    github_link: "https://github.com/ShreyasRaman-01/CS1430_Final_Project",
     languages:[FILTERS[0]],
     packages:[PACKAGES[1], PACKAGES[7], PACKAGES[10], PACKAGES[0],PACKAGES[34], PACKAGES[35]]
   },
@@ -261,7 +261,7 @@ const PROJECT_DETAILS:  Array<ProjectDetails> = [
     name: "PaleoAI: Taxonomical Identification",
     catchphrase: "Dataset Expansion | Generative Modelling",
     bulletpoints: ['Expanded existing dataset 8× by adding 300,000+ images, with unique taxonomies','New data improved model classification accuracy to >80%','Web-scraping Tool: scrapes online databases for image file-links; automatically saves images using a user-specified or auto-generated file structure','Taxonomic Lookup: an SQLite database used as a reference tool to filter family, genus and species names for the image dataset', 'Cycle-GAN: enhancing a Cycle-GAN model for translations between leaf and fossil images - used to generate synthetic training samples', 'Completed under Prof. Thomas Serre - Serre Labs' ],
-    github_link: "https://www.github.com",
+    github_link: "https://github.com/serre-lab/paleoai_data/issues",
     languages:[FILTERS[0],FILTERS[5]],
     packages:[PACKAGES[2],PACKAGES[5],PACKAGES[6],PACKAGES[7],PACKAGES[9]]
   },
@@ -291,7 +291,7 @@ const PROJECT_DETAILS:  Array<ProjectDetails> = [
     name: "Data Dashboard Visualizer",
     catchphrase: "Kaggle Datasets: Video Game Sales | Interactive + Animated Dashboard",
     bulletpoints: ['A thematic HTML web-page that serves as a data dashboard','Built interactive and stylized graphs, pie-charts and scatter plots (with summary tooltips) using d3.js','Created interactive user input streams [text/button input] to filter displayed data or perform scatter point regression in real-time [with animation]','Performed and displayed statistical analysis (e.g. box-whisker plot) that adapts search/display based on filters selected - also using d3.js','Completed as part of project for CS1951A - Data Science'],
-    github_link: "https://www.github.com",
+    github_link: "https://github.com/Shreyas-S-Raman/DashboardVisualizer",
     languages: [FILTERS[2],FILTERS[7]],
     packages: [PACKAGES[11],PACKAGES[12],PACKAGES[13],PACKAGES[14]]
   },

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { CircularProgressbarWithChildren } from "react-circular-progressbar";
 
-const CircularProgress: React.FC<{ values: Array<number>; interval?: number }> =
+const CircularProgress: React.FC<{ values: Array<number>; interval?: number}> =
   ({ values, interval = 1000, children }) => {
     const [valuesIndex, setValuesIndex] = useState<number>(0);
 
@@ -28,8 +28,10 @@ const CircularProgress: React.FC<{ values: Array<number>; interval?: number }> =
           },
         }}
       >
-        {children}
+      {children}
       </CircularProgressbarWithChildren>
+      
+      
     );
   };
 

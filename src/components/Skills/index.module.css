@@ -27,6 +27,14 @@
   align-items: center;
 }
 
+.skillItem:hover {
+  background-color: #DCDCDC;
+}
+.skillItem:hover .icon{
+  background-color: #DCDCDC;
+  opacity: 0.6;
+}
+
 .skillName {
   color: white;
   font-size: 1.5rem;
@@ -38,6 +46,7 @@
 .icon {
   width: 55%;
 }
+
 
 /* Column layout */
 .columns {

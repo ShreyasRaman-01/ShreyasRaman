@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import CSS from "csstype";
+import { Link } from 'react-router-dom';
 
 //importing CSS styling for the about card + swipe animation
 import "./About_Card.css";
@@ -25,28 +26,23 @@ class AboutCard extends Component {
     <ul>
       <li>
         {" "}
-        Recently graduated: <b>ScB (with Honors) in Computer Science</b> @ Brown University {" "}
+        Welcome to my personal website! My name is Shreyas Raman. I am a researcher and roboticist focused on <b>enhancing embodied AI</b> by learning <b>composable abstractions of multimodal observations</b> (vision, audio, language, haptic etc...){" "}
       </li>
       <li>
         {" "}
-        Was fortunate to work on exciting research under the BigAI initiative with <b><a href="https://h2r.cs.brown.edu/people/" style={{color:"black", textDecoration:"none"}}>Prof. Stefanie Tellex</a></b> and <b><a href="https://cs.brown.edu/people/gdk/index.html" style={{color:"black", textDecoration:"none"}}>Prof. George Konidaris</a></b> and with <b><a href="https://serre-lab.clps.brown.edu/person/thomas-serre/" style={{color:"black", textDecoration:"none"}}>Prof. Thomas Serre</a></b> in Serre Labs
+        I was grateful to <Link to="/research">research</Link> with the BigAI initiative under <b><a href="https://h2r.cs.brown.edu/people/" style={{color:"black", textDecoration:"none"}}>Prof. Stefanie Tellex</a></b> and <b><a href="https://cs.brown.edu/people/gdk/index.html" style={{color:"black", textDecoration:"none"}}>Prof. George Konidaris</a></b>, as well as <b><a href="https://randallbalestriero.github.io/" style={{color:"black", textDecoration:"none"}}>Prof. Randall Balestriero</a></b> and <b><a href="https://serre-lab.clps.brown.edu/person/thomas-serre/" style={{color:"black", textDecoration:"none"}}>Prof. Thomas Serre</a></b>
       </li>
       <li>
         {" "}
-        I ❤️ everything about <b>multimodal AI and ML</b>: Comp. Vision, NLP, RL and Decision Trees. Especially their <b>applications to autonomous agents and robots</b>
-        {" "}
+        Graduated with <b>ScB & MSc (Honors) in Computer Science</b> @ Brown University. Currently pursuing a PhD! {" "}
       </li>
       <li>
         {" "}
-        Outside of this, I am always eager to explore the unknown,learn something new {" "}
-        and help others along the way 😃{" "}
+        Outside research, I like: competitive <a href="https://chess.com/member/shreyasraman" style={{color:"black", textDecoration:"none"}}>chess ♚</a>, <a href="https://www.goodreads.com/user/show/185687235-shreyas-raman" style={{color:"black", textDecoration:"none"}}>reading 📚</a>, boxing 🥊, mentorship 🧑‍🏫, <Link to="/blog">poetry 🖊️</Link>, guitar 🎸 and technical projects {" "}
       </li>
       <li>
         {" "}
-        I competitively play chess [@shreyasraman on chess.com] and like to play 🏀, 🏓
-      </li>
-      <li>
-        I also dabble with creative writing + poetry and blockchain technology
+        If you'd like to know more <b>about me or reach out</b>, please explore the social links above or my <Link to="/blog">blog</Link>{" "}
       </li>
     </ul>
   );
@@ -55,26 +51,18 @@ class AboutCard extends Component {
   about_me_long_content = (
     <p style={clicked_paragraph_style}>
       {" "}
-      Hey there, welcome to my website! My name is Shreyas. <br />
-      <br /> I am a <b>researcher and software developer</b>, eager
-      to enable human-like reasoning and better conceptual abstractions using the power of multimodal AI and big data with autonomous agents. I have always enjoyed
-      physics/mechanics, but in my first semester at Brown, I{" "}
-      <b>
-        fell in love with a completely new world of computer science
-      </b>
-      . <br />
-      <br /> During my undergraduate degree, I have cultivated a{" "}
-      <b>
-        strong passion for programming and artificial intelligence - multimodal AI like computer vision or natural language processing applied with reinforcement learning and deep learning in particular
-      </b>
-      . Thanks to my courses, I now know <b>Python, Java, MATLAB, Solidity, Go and C</b>{" "}
-      and am self-taught in <b>SQL, HTML, Javascript and Typescript</b> :){" "}
-      <br /> I had the opportunity to do some interesting projects + research in these areas, check them out below! <br />
-      <br /> Aside from this, I was actively involved in{" "}
-      <b>Brown's Chess + Table Tennis clubs</b>; I supported the{" "}
-      <b>"Brown Space Engineering" (BSE)</b> group with CubeSAT missions,  served as a head teaching assistant and Mieklejohn peer mentor. I also helped students in Providence highschools to accelerate their
-      learning. I enjoy working on the seams between the digital/physical worlds
-      and want to use multimodal AI to blend the lines between them.{" "}
+      Hey there, welcome to my personal website! My name is Shreyas Raman. I graduated with ScB & MSc (Honors) in Computer Science at Brown University<br />
+      <br /> I am a <b>researcher and roboticist</b> currently pursuing a PhD, eager
+      to enable human-like reasoning and better composable abstractions for autonomous agents using multimodal AI e.g. across visual, audio, language or haptic data. Though I always enjoyed
+      physics/engineering, in my first semester at Brown University, I{" "}
+      <b>fell in love with a completely new world of computer science.</b>
+      <br /> Over undergrad, my <Link to="/research">research experience</Link> across 9 projects accepted at 6 conferences has cultivated a{" "}
+      <b>strong passion for multimodal AI (computer vision, natural language processing or reinforcement learning) applied to help agents/robots improve generalization to novel tasks, thereby making agents meaningfully independent and simplifying human-agent interactions.</b>
+      Several interesting <Link to="/projects"></Link>projects over this time have also made me familiar with <b>Python, Java, MATLAB, Solidity, Go and C</b>{" "}
+      and am self-taught in <b>SQL, HTML, Javascript and Typescript</b>. Please check them out!{" "}
+      <br /> Aside from research, I am actively involved in{" "}
+      <b>Brown's Chess club</b>; I supported the{" "}
+      <b>"Brown Space Engineering" (BSE)</b> group with CubeSAT missions; I served as a head TA for CSCI1410, Meiklejohn peer mentor and local tutor to highschool students in Providence; I also dabble in creative writing + poetry. I am keen to leverage my unique background to bridge my work beyond theory towards tangible impact.{" "}
     </p>
   );
 
@@ -115,28 +103,41 @@ class AboutCard extends Component {
             </div>
 
             <div className="shreyas-card-back">
-            <h3> Shreyas' Fun Facts : </h3>
+            <h3> Fun facts about me: </h3>
             <ul>
               <li>
-                My to-go Pokémon Team includes: <b>Lapras</b>, <b>Shedinja</b>, <b>Lucario</b>{" "}
-                and <b>Linoone</b>
+                I am ambidextrous
               </li>
               <li>
-                Absolutely love <b>Middle Eastern</b> and <b>Italian</b> food!
+                I have lived in 5 countries and can speak 6 languages
               </li>
               <li>
-                <b>Pani Puri</b> is the best Chaat
+                I know too many animal facts!
               </li>
-              <li>I'm ambidextrous!</li>
-
-              <li> A 🐶 person: adore <b>GSDs</b></li>
+              <li> 
+                I love German Shepherd dogs 🐶
+              </li>
             </ul>
             </div>
           </div>
         </div>
       </div>
+
+      // finally add recent news in the bottom
+      <div className="recent-news-section">
+        <h2>Recent News</h2>
+        <ul>
+          <li>Applied to PhD programs in the 2025 cycle! Looking forward to results 🤞</li>
+          <li>Reviewing for 2nd ever LEAP Workshop at CoRL 2024!</li>
+          <li>My paper SkillWrapper was accepted at LEAP, CoRL 2024</li>
+          <li>Spending Winter 2023 at McKinsey & Co, developing a B2B AI Strategy </li>
+          <li>Graduated ScB CS (Honors) with Magna-cum-laude & Senior Prize at Brown University</li>
+        </ul>
+      </div>
     );
   }
+
+
 }
 
 export default AboutCard;

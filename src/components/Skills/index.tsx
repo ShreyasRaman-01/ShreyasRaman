@@ -11,35 +11,43 @@ import CircularProgress from "../CircularProgress";
 import styles from "./index.module.css";
 import MLBrain from "../../icons/MLBrain";
 import DataScience from "../../icons/Data";
+import Robotics from "../../icons/Robotics";
+
+import { useState } from 'react';
 
 interface Skillset {
   name: string;
   percent: Array<number>;
   icon: JSX.Element;
+  lines: string;
 }
 
 const SKILLSET: Array<Skillset> = [
-  { name: "Python", percent: [0, 80], icon: <Python /> },
-  { name: "Java", percent: [0, 70], icon: <Java /> },
-  { name: "Go", percent: [0,75], icon: <Go />},
-  { name: "Solidity", percent: [0, 60], icon: <Solidity />},
-  { name: "C", percent: [0, 50], icon: <C /> },
+  { name: "Python", percent: [0, 85], icon: <Python />, lines:"> 800k"},
+  { name: "Java", percent: [0, 70], icon: <Java />, lines:"~300k" },
+  { name: "Go", percent: [0,75], icon: <Go />, lines:"~20k"},
+  { name: "Solidity", percent: [0, 60], icon: <Solidity />, lines:"~50k"},
+  { name: "C", percent: [0, 50], icon: <C />, lines:"~30k" },
   // { name: "HTML/CSS", percent: [0, 75], icon: <HTMLTag /> },
-  { name: "MATLAB", percent: [0, 70], icon: <MATLAB /> },
-  { name: "REACT", percent: [0, 40], icon: <ReactIcon /> },
+  { name: "MATLAB", percent: [0, 70], icon: <MATLAB />, lines:"~250k" },
+  { name: "React", percent: [0, 40], icon: <ReactIcon />, lines:"~10k" },
 ];
 
 const Skills = () => {
+
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div className={styles.container}>
     <div className={styles.skillsPage}>
       <div className={styles.skillBar}>
-        {SKILLSET.map(({ name, icon: Icon, percent }) => (
-          <div key={name} className={styles.skillItem}>
+        {SKILLSET.map(({ name, icon: Icon, percent, lines}) => (
+          <div key={name} className={styles.skillItem} onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}>
             <CircularProgress values={percent}>
               <span className={styles.icon}>{Icon}</span>
             </CircularProgress>
-
+            <div className="lines-written">{isHovered ? lines : ""}</div>
             <span className={styles.skillName}>{name}</span>
           </div>
         ))}
@@ -51,11 +59,7 @@ const Skills = () => {
             <MLBrain />
           </span>
 
-          <h2 className={styles.title}>AI + Autonomous Agents</h2>
-
-          {/* <p className={styles.description}>
-          I value simple content structure, clean design patterns, and thoughtful interactions.
-          </p> */}
+          <h2 className={styles.title}>Embodied Multimodal AI</h2>
 
           <div className={styles.section}>
             <h3 className={styles.sectionTitle}>Problems I like tackling:</h3>
@@ -75,41 +79,36 @@ const Skills = () => {
               <li className={styles.toolListItem}>Deep Learning</li>
               <li className={styles.toolListItem}>Foundation Models (LLMs & VLMs)</li>
               <li className={styles.toolListItem}>Halfspaces</li>
-              <li className={styles.toolListItem}>Naive Bayes</li>
               <li className={styles.toolListItem}>Logistic Regression</li>
             </ul>
           </div>
         </div>
         <div className={styles.column}>
           <span className={styles.domainIcon}>
-            <DataScience />
+            <Robotics />
           </span>
 
-          <h2 className={styles.title}>Data Science</h2>
-
-          {/* <p className={styles.description}>
-          I believe that pairing any massive dataset with the effective analysis can offer tremendous insights.
-          </p> */}
+          <h2 className={styles.title}>Robotics</h2>
 
           <div className={styles.section}>
             <h3 className={styles.sectionTitle}>Problems I like tackling:</h3>
 
             <span className={styles.subsetValues}>
-              Model Selection, Predictive Modelling, EDA, Decisions with Data 
+              Localization, Mapping, Mobile Manipulation, Navigation, Optical Flow, Hardware Projects
             </span>
           </div>
 
           <div className={styles.section}>
-            <h3 className={styles.sectionTitle}>Data Science Tools</h3>
+            <h3 className={styles.sectionTitle}>Robotics Tools</h3>
 
             <ul className={styles.toolList}>
-              <li className={styles.toolListItem}>Regression</li>
-              <li className={styles.toolListItem}>Decision Trees & Random Forest</li>
-              <li className={styles.toolListItem}>Support Vector Machines (SVM)</li>
-              <li className={styles.toolListItem}>Principal Component Analysis (PCA)</li>
-              <li className={styles.toolListItem}>K-Nearest Neighbours</li>
-              <li className={styles.toolListItem}>K-Means Clustering</li>
-              <li className={styles.toolListItem}>Database Pipelines</li>
+              <li className={styles.toolListItem}>Robotics Operating System (ROS)</li>
+              <li className={styles.toolListItem}>Boston Dynamics SPOT SDK</li>
+              <li className={styles.toolListItem}>PID Controllers</li>
+              <li className={styles.toolListItem}>Arduino & Raspberry Pi (MCU)</li>
+              <li className={styles.toolListItem}>Foundation Models (LLMs & VLMs)</li>
+              <li className={styles.toolListItem}>3D Point-Cloud Representations</li>
+              <li className={styles.toolListItem}>3D Printing (AutoCAD)</li>
               
             </ul>
           </div>
@@ -121,15 +120,11 @@ const Skills = () => {
 
           <h2 className={styles.title}>Software Development</h2>
 
-          {/* <p className={styles.description}>
-          I like developing from scratch and value the integration of inelligence with software to elevate the user's experience.
-          </p> */}
-
           <div className={styles.section}>
             <h3 className={styles.sectionTitle}>Things I enjoy developing:</h3>
 
             <span className={styles.subsetValues}>
-              Websites, WebApps, Web Game Applications 
+              AI-powered Software, Websites, WebApps 
             </span>
           </div>
 
@@ -137,11 +132,11 @@ const Skills = () => {
             <h3 className={styles.sectionTitle}>Software Development Tools</h3>
 
             <ul className={styles.toolList}>
-              <li className={styles.toolListItem}>VSCode</li>
-              <li className={styles.toolListItem}>GitHub</li>
-              <li className={styles.toolListItem}>Terminal</li>
               <li className={styles.toolListItem}>CodePen</li>
+              <li className={styles.toolListItem}>JavaFX</li>
               <li className={styles.toolListItem}>Tailwind CSS</li>
+              <li className={styles.toolListItem}>Java Applets</li>
+              <li className={styles.toolListItem}>Google ML Kit</li>
             </ul>
           </div>
         </div>

@@ -424,7 +424,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     name: "CAPE: Corrective Actions from Precondition Errors using Large Language Models",
     catchphrase: "First Author | LangRob @ CoRL 2023, ICRA 2024 | Honors Thesis",
     //bulletpoints: [],
-    github_link: "https://www.github.com",
+    github_link: "https://github.com/Shreyas-S-Raman/corrective_actions_precondition_errors",
     submission_links: [updateLink(deepCopy(SUBMISSIONS[0]),"https://arxiv.org/abs/2211.09935"),updateLink(deepCopy(SUBMISSIONS[3]), 'https://openreview.net/forum?id=LW2YwzqKKP&nesting=2&sort=date-desc'), SUBMISSIONS[2], updateLink(deepCopy(SUBMISSIONS[4]), 'https://openreview.net/forum?id=cMDMRBe1TKs'), updateLink(deepCopy(SUBMISSIONS[11]),'https://shreyas-s-raman.github.io/CAPE/')],
     topics_and_libraries: [TOPICS_LIBRARIES[3], TOPICS_LIBRARIES[4], TOPICS_LIBRARIES[13], TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[16], TOPICS_LIBRARIES[18], TOPICS_LIBRARIES[21], TOPICS_LIBRARIES[26], TOPICS_LIBRARIES[30], TOPICS_LIBRARIES[32]]
   },
@@ -434,7 +434,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     name: "Plug in The Safety Chip: Enforcing Constraints for LLM-driven Robot Agents",
     catchphrase: "Co-Author | LangRob @ CoRL, ICRA 2024",
     //bulletpoints: [],
-    github_link: "https://www.github.com",
+    github_link: "https://github.com/YzyLmc/ltl_safety",
     submission_links: [updateLink(deepCopy(SUBMISSIONS[0]),'https://arxiv.org/abs/2309.09919'), updateLink(deepCopy(SUBMISSIONS[3]), 'https://openreview.net/forum?id=INvxF4iQ34&nesting=2&sort=date-desc'), SUBMISSIONS[2], updateLink(deepCopy(SUBMISSIONS[11]), 'https://yzylmc.github.io/safety-chip/')],
     topics_and_libraries: [TOPICS_LIBRARIES[3], TOPICS_LIBRARIES[4], TOPICS_LIBRARIES[13], TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[16], TOPICS_LIBRARIES[18], TOPICS_LIBRARIES[21], TOPICS_LIBRARIES[22], TOPICS_LIBRARIES[26], TOPICS_LIBRARIES[30]]
   },
@@ -444,7 +444,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     name: "Tiered Reward Functions: Specifying and Fast Learning of Desired Behavior",
     catchphrase: "Co-Author | RLC 2024",
     //bulletpoints: [ ],
-    github_link: "https://www.github.com",
+    github_link: "https://github.com/zhouzypaul/tiered-reward",
     submission_links: [SUBMISSIONS[0], SUBMISSIONS[12], updateLink(deepCopy(SUBMISSIONS[11]), 'https://zhouzypaul.github.io/tiered_reward/')],
     topics_and_libraries: [TOPICS_LIBRARIES[11],TOPICS_LIBRARIES[24], TOPICS_LIBRARIES[25]]
   },
@@ -454,7 +454,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     name: "Development of a CNN for GPD Classification in Cardiac Arrest Patients",
     catchphrase: "Acknowledgement | Brown University Archive",
     //bulletpoints: [],
-    github_link: "https://www.github.com",
+    github_link: "https://github.com/syphongha/eeg_research_code_main",
     submission_links: [SUBMISSIONS[8]],
     topics_and_libraries: [TOPICS_LIBRARIES[2], TOPICS_LIBRARIES[7], TOPICS_LIBRARIES[27], TOPICS_LIBRARIES[28]]
   },
@@ -474,7 +474,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     name: "Visual-language embeddings with improved latent semantics for image editing",
     catchphrase: "Co-Author | In Preparation for ICML 2025",
     //bulletpoints: [],
-    github_link: "https://www.github.com",
+    github_link: "https://github.com/dmayo/image-cap",
     submission_links: [SUBMISSIONS[16]],
     topics_and_libraries: [TOPICS_LIBRARIES[1], TOPICS_LIBRARIES[12], TOPICS_LIBRARIES[13],TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[18], TOPICS_LIBRARIES[31]]
 
@@ -485,7 +485,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     alt_name: "ReCap",
     name: "RECAP: Reconstructing Images for Caption Evaluation",
     catchphrase: "Co-Author | Brown University Archive",
-    github_link: "https://www.github.com",
+    github_link: "https://github.com/anc2001/recap",
     submission_links: [updateLink(deepCopy(SUBMISSIONS[8]), "https://cs.brown.edu/media/filer_public/1f/75/1f75f7f7-836d-4baa-83c6-6d4c14dc71ca/changadrian_feuchtsheridan_ramanshreyas_sundara.pdf")],
     topics_and_libraries:[TOPICS_LIBRARIES[12], TOPICS_LIBRARIES[13], TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[24], TOPICS_LIBRARIES[31]]
   }
@@ -496,7 +496,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
 
 const Projects = () => (
   <div className={styles.container}>
-    <h2 className={styles.projectsTitle}>Publications & Research</h2>
+    <h2 className={styles.projectsTitle}>Publications</h2>
 
     {Array.from(RESEARCH_DETAILS.keys()).map((val, index) => (
       
