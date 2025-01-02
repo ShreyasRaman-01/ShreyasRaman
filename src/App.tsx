@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 import FrontPage from "./components/Header_Animation/Front_Page";
 import AboutCard from "./components/About_Me/About_Card";
 import Skills from "./components/Skills";
-import Blog from "./components/Blog_Post";
+// import Blog from "./components/Blog_Post";
 import Research from "./components/Research";
 import WorkExperience from "./components/Work_Experiences";
 import FooterBar from "./components/Navbar/FooterBar";
@@ -45,9 +45,9 @@ function App() {
             <WorkExperience />
           </Route>
 
-          <Route path="/blog">
+          {/* <Route path="/blog">
           <Blog />
-          </Route>
+          </Route> */}
 
           <Route path="/projects">
             <Projects />
