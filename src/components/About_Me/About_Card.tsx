@@ -69,6 +69,7 @@ class AboutCard extends Component {
   //function to render the about card
   render() {
     return (
+      <div>
       <div className="about-card-container">
         <div className="about-card">
           <div className="about-header">
@@ -134,6 +135,8 @@ class AboutCard extends Component {
           <li>Graduated ScB CS (Honors) with Magna-cum-laude & Senior Prize at Brown University</li>
         </ul>
       </div>
+      </div>
+
     );
   }
 

@@ -10,7 +10,7 @@ import ReactIcon from "../../icons/ReactIcon";
 import CircularProgress from "../CircularProgress";
 import styles from "./index.module.css";
 import MLBrain from "../../icons/MLBrain";
-import DataScience from "../../icons/Data";
+// import DataScience from "../../icons/Data";
 import Robotics from "../../icons/Robotics";
 
 import { useState } from 'react';
