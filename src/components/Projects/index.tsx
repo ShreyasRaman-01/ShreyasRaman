@@ -261,7 +261,7 @@ const PROJECT_DETAILS:  Array<ProjectDetails> = [
     name: "PaleoAI: Taxonomical Identification",
     catchphrase: "Dataset Expansion | Generative Modelling",
     bulletpoints: ['Expanded existing dataset 8× by adding 300,000+ images, with unique taxonomies','New data improved model classification accuracy to >80%','Web-scraping Tool: scrapes online databases for image file-links; automatically saves images using a user-specified or auto-generated file structure','Taxonomic Lookup: an SQLite database used as a reference tool to filter family, genus and species names for the image dataset', 'Cycle-GAN: enhancing a Cycle-GAN model for translations between leaf and fossil images - used to generate synthetic training samples', 'Completed under Prof. Thomas Serre - Serre Labs' ],
-    github_link: "https://github.com/serre-lab/paleoai_data/issues",
+    github_link: "https://github.com/serre-lab/paleoai_data",
     languages:[FILTERS[0],FILTERS[5]],
     packages:[PACKAGES[2],PACKAGES[5],PACKAGES[6],PACKAGES[7],PACKAGES[9]]
   },

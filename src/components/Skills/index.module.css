@@ -112,6 +112,8 @@
 
 .section {
   margin: 2rem 0;
+}
+.section li{
   justify-content: center; /* Horizontally centers the content */
   align-items: center;    /* Vertically centers the content */
   text-align: center;     /* Aligns text within the <li> elements */
