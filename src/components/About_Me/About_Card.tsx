@@ -56,12 +56,12 @@ class AboutCard extends Component {
       to enable human-like reasoning and better composable abstractions for autonomous agents using multimodal AI e.g. across visual, audio, language or haptic data. Though I always enjoyed
       physics/engineering, in my first semester at Brown University, I{" "}
       <b>fell in love with a completely new world of computer science.</b>
-      <br /> Over undergrad, my <Link to="/research">research experience</Link> across 9 projects accepted at 6 conferences has cultivated a{" "}
-      <b>strong passion for multimodal AI (computer vision, natural language processing or reinforcement learning) applied to help agents/robots improve generalization to novel tasks, thereby making agents meaningfully independent and simplifying human-agent interactions.</b> Several interesting <Link to="/projects">projects</Link> over this time have also made me familiar with <b>Python, Java, MATLAB, Solidity, Go and C</b>{" "}
+      <br /> Over undergrad, my <Link to="/research" style={{color:"black", textDecoration:"none"}}>research experience</Link> across 9 projects accepted at 6 conferences has cultivated a{" "}
+      <b>strong passion for multimodal AI (computer vision, natural language processing or reinforcement learning) applied to help agents/robots improve generalization to novel tasks, thereby making agents meaningfully independent and simplifying human-agent interactions.</b> Several interesting <Link to="/projects" style={{color:"black", textDecoration:"none"}}>projects</Link> over this time have also made me familiar with <b>Python, Java, MATLAB, Solidity, Go and C</b>{" "}
       and am self-taught in <b>SQL, HTML, Javascript and Typescript</b>. Please check them out!{" "}
       <br /> Aside from research, I am actively involved in{" "}
       <b>Brown's Chess club</b>; I supported the{" "}
-      <b>"Brown Space Engineering" (BSE)</b> group with CubeSAT missions; I served as a <b>head TA for CSCI1410</b>, <b>Meiklejohn</b> peer mentor and <b>tutor to local highschool students</b> in Providence; I also dabble in <Link to="/blog"><b>creative writing + poetry</b></Link>. I am keen to leverage my unique background to bridge my work beyond theory towards tangible impact.{" "}
+      <b>"Brown Space Engineering" (BSE)</b> group with CubeSAT missions; I served as a <b>head TA for CSCI1410</b>, <b>Meiklejohn</b> peer mentor and <b>tutor to local highschool students</b> in Providence; I also dabble in <Link to="/blog" style={{color:"black", textDecoration:"none"}}><b>creative writing + poetry</b></Link>. I am keen to leverage my unique background to bridge my work beyond theory towards tangible impact.{" "}
     </p>
   );
 
@@ -129,7 +129,7 @@ class AboutCard extends Component {
         <ul>
           <li>Applied to PhD programs in the 2025 cycle! Looking forward to results 🤞</li>
           <li>Reviewing for 2nd ever LEAP Workshop at CoRL 2024!</li>
-          <li>My paper SkillWrapper was accepted at LEAP, CoRL 2024</li>
+          <li>My paper <a href="https://openreview.net/pdf?id=5z8AJP5G8c" style={{color:"black", textDecoration:"none"}}>SkillWrapper</a> was accepted at LEAP, CoRL 2024</li>
           <li>Spending Winter 2023 at McKinsey & Co, developing a B2B AI Strategy </li>
           <li>Graduated ScB CS (Honors) with Magna-cum-laude & Senior Prize at Brown University</li>
         </ul>
