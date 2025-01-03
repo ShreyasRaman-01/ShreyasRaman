@@ -81,13 +81,15 @@
   /* grid-gap: 35px; */
   list-style: none;
   text-align: center;
-  text-decoration: none;
   /* margin:0; */
   height: 100%;
   align-items: center;
   /* margin-left: 2rem; */
   margin-left: 50rem;
   padding: 0;
+}
+.nav-menu a {
+  text-decoration: none;
 }
 
 /* CSS styling for hamburger menu icon and close menu icon*/
