@@ -44,18 +44,33 @@ class Navbar extends Component {
         </div>
         <div className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
           {MenuItems.map((item, index) => {
-            return (
-              <NavLink
-                key={index}
-                activeClassName="active-link"
-                className="nav-li"
-                to={item.url}
-                onClick={this.close}
-              >
-                {" "}
-                <span className="nav-links"> {item.page_name} </span>{""}
-              </NavLink>
-            );
+            
+            const isExternal = item.url.startsWith("http");
+            
+            if (isExternal) {
+              
+              return (
+                <a href={item.url}>
+                  <span className="nav-links"> {item.page_name} </span>{""}
+                </a>
+              );
+
+            } else {
+
+              return (
+                <NavLink
+                  key={index}
+                  activeClassName="active-link"
+                  className="nav-li"
+                  to={item.url}
+                  onClick={this.close}
+                >
+                  {" "}
+                  <span className="nav-links"> {item.page_name} </span>{""}
+                </NavLink>
+              );
+
+            }
           })}
         </div>
       </nav>

@@ -42,7 +42,7 @@ class AboutCard extends Component {
       </li>
       <li>
         {" "}
-        If you'd like to know more <b>about me or reach out</b>, please explore the social links above or my <a href="https://medium.com/@shreyas_sundara_raman">blog</a>{" "}
+        If you'd like to know more <b>about me or reach out</b>, please explore the social links above or my <a href="https://medium.com/@shreyas_sundara_raman" style={{color:"black", textDecoration:"none"}}>blog</a>{" "}
       </li>
     </ul>
   );
