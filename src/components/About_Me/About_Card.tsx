@@ -38,11 +38,11 @@ class AboutCard extends Component {
       </li>
       <li>
         {" "}
-        Outside research, I like: competitive <a href="https://chess.com/member/shreyasraman" style={{color:"black", textDecoration:"none"}}>chess ♚</a>, <a href="https://www.goodreads.com/user/show/185687235-shreyas-raman" style={{color:"black", textDecoration:"none"}}>reading 📚</a>, boxing 🥊, mentorship 🧑‍🏫, <Link to="/blog">poetry 🖊️</Link>, guitar 🎸 and technical projects {" "}
+        Outside research, I like: competitive <a href="https://chess.com/member/shreyasraman" style={{color:"black", textDecoration:"none"}}>chess ♚</a>, <a href="https://www.goodreads.com/user/show/185687235-shreyas-raman" style={{color:"black", textDecoration:"none"}}>reading 📚</a>, boxing 🥊, mentorship 🧑‍🏫, <a href="https://medium.com/@shreyas_sundara_raman" style={{color:"black", textDecoration:"none"}}>poetry</a> 🖊️, guitar 🎸 and technical projects {" "}
       </li>
       <li>
         {" "}
-        If you'd like to know more <b>about me or reach out</b>, please explore the social links above or my <Link to="/blog">blog</Link>{" "}
+        If you'd like to know more <b>about me or reach out</b>, please explore the social links above or my <a href="https://medium.com/@shreyas_sundara_raman">blog</a>{" "}
       </li>
     </ul>
   );

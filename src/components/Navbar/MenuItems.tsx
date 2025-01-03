@@ -9,6 +9,6 @@ export const MenuItems: {
   { page_name: "Experience", url: "/work_experiences" },
   { page_name: "Projects", url: "/projects" },
   { page_name: "Skills", url: "/skills" },
-  { page_name: "Blog", url: "/blog" },
+  { page_name: "Blog", url: "https://medium.com/@shreyas_sundara_raman" },
   // { page_name: "Contact Me", url: "/contact-me" },
 ];
