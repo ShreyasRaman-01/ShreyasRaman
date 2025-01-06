@@ -70,6 +70,9 @@
   font-size: 20px;
   padding: 0 1.6rem;
 }
+.about-card-content {
+  list-style-type: none;
+}
 
 .about-card-content li {
   margin: 20px 0;

@@ -26,23 +26,24 @@ class AboutCard extends Component {
     <ul>
       <li>
         {" "}
-        Welcome to my personal website! My name is Shreyas Raman. I am a researcher and roboticist focused on <b>enhancing embodied AI</b> by learning <b>composable abstractions of multimodal observations</b> (vision, audio, language, haptic etc...){" "}
+        Welcome to my personal website! My name is Shreyas Raman{" "}
       </li>
       <li>
         {" "}
-        I was grateful to <Link to="/research">research</Link> with the BigAI initiative under <b><a href="https://h2r.cs.brown.edu/people/" style={{color:"black", textDecoration:"none"}}>Prof. Stefanie Tellex</a></b> and <b><a href="https://cs.brown.edu/people/gdk/index.html" style={{color:"black", textDecoration:"none"}}>Prof. George Konidaris</a></b>, as well as <b><a href="https://randallbalestriero.github.io/" style={{color:"black", textDecoration:"none"}}>Prof. Randall Balestriero</a></b> and <b><a href="https://serre-lab.clps.brown.edu/person/thomas-serre/" style={{color:"black", textDecoration:"none"}}>Prof. Thomas Serre</a></b>
+        I graduted from Brown University with an <b>ScB & MSc (Honors) in Computer Science</b>, grateful to do <Link to="/research">research</Link> with the BigAI initiative under <b><a href="https://h2r.cs.brown.edu/people/" style={{color:"black", textDecoration:"none"}}>Prof. Stefanie Tellex</a></b> and <b><a href="https://cs.brown.edu/people/gdk/index.html" style={{color:"black", textDecoration:"none"}}>Prof. George Konidaris</a></b>, as well as <b><a href="https://randallbalestriero.github.io/" style={{color:"black", textDecoration:"none"}}>Prof. Randall Balestriero</a></b> and <b><a href="https://serre-lab.clps.brown.edu/person/thomas-serre/" style={{color:"black", textDecoration:"none"}}>Prof. Thomas Serre</a></b>
+        {" "}
       </li>
       <li>
         {" "}
-        Graduated with <b>ScB & MSc (Honors) in Computer Science</b> @ Brown University. Currently pursuing a PhD! {" "}
+        My research focus towards a PhD is on <b>enhancing embodied AI</b> by learning <b>composable abstractions of multimodal observations</b> (vision, audio, language, haptic etc...) 
       </li>
       <li>
         {" "}
-        Outside research, I like: competitive <a href="https://chess.com/member/shreyasraman" style={{color:"black", textDecoration:"none"}}>chess ♚</a>, <a href="https://www.goodreads.com/user/show/185687235-shreyas-raman" style={{color:"black", textDecoration:"none"}}>reading 📚</a>, boxing 🥊, mentorship 🧑‍🏫, <a href="https://medium.com/@shreyas_sundara_raman" style={{color:"black", textDecoration:"none"}}>poetry</a> 🖊️, guitar 🎸 and technical projects {" "}
+        Outside research, I like: competitive <a href="https://chess.com/member/shreyasraman" style={{color:"black", textDecoration:"none"}}>chess ♚</a>, <a href="https://www.goodreads.com/user/show/185687235-shreyas-raman" style={{color:"black", textDecoration:"none"}}>reading 📚</a>, boxing 🥊, mentorship 🧑‍🏫, <a href="https://medium.com/@shreyas_sundara_raman" style={{color:"black", textDecoration:"none"}}>poetry</a> 🖊️, guitar 🎸 and technical <Link to="/projects">projects</Link>{" "}
       </li>
       <li>
         {" "}
-        If you'd like to know more <b>about me or reach out</b>, please explore the social links above or my <a href="https://medium.com/@shreyas_sundara_raman" style={{color:"black", textDecoration:"none"}}>blog</a>{" "}
+        If you'd like to <b>know more about me or reach out</b>, please use the social links above or use my <a href="https://medium.com/@shreyas_sundara_raman" style={{color:"black", textDecoration:"none"}}>blog</a>{" "}
       </li>
     </ul>
   );
