@@ -47,7 +47,7 @@ const Skills = () => {
               <span className={styles.icon} onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}>{Icon}</span>
             </CircularProgress>
-            <span className={styles.skillName}>{<b>${name}</b>} {<br />} {`${lines} lines`}</span>
+            <span className={styles.skillName}>{<b>{name}</b>} {<br />} {`${lines} lines`}</span>
           </div>
         ))}
       </div>
