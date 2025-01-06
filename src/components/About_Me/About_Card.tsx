@@ -96,7 +96,7 @@ class AboutCard extends Component {
           <div className="shreyas-card-inner">
             <div className="shreyas-card-front">
               <img
-                src="media/shreyas_card_icon_new.jpg"
+                src="media/shreyas_holi.png"
                 alt="shreyas_card_icon1"
                 className="shreyas-card-image-front"
               />
