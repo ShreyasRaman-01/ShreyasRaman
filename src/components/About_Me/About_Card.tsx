@@ -35,7 +35,7 @@ class AboutCard extends Component {
       </li>
       <li>
         {" "}
-        My research focus towards a PhD is on <b>enhancing embodied AI</b> by learning <b>composable abstractions of multimodal observations</b> (vision, audio, language, haptic etc...) 
+        My research focus towards a PhD is on <b>enhancing embodied AI</b> by learning <b>composable abstractions of multimodal observations</b> (vision, audio, language, haptic etc...){" "}
       </li>
       <li>
         {" "}
