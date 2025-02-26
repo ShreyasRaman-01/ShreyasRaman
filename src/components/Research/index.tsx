@@ -475,7 +475,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     alt_name: "Image Editing",
     name: "Visual-language embeddings with improved latent semantics for image editing",
     catchphrase: "Co-Author | In Preparation for ICML 2025",
-    description: "King + Woman = Queen but for image embeddings in language",
+    description: "King + Woman = Queen but for visual-language embedding spaces",
     github_link: "https://github.com/dmayo/image-cap",
     submission_links: [SUBMISSIONS[16]],
     topics_and_libraries: [TOPICS_LIBRARIES[1], TOPICS_LIBRARIES[12], TOPICS_LIBRARIES[13],TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[18], TOPICS_LIBRARIES[31]]
