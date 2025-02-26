@@ -7,7 +7,7 @@ interface ResearchDetails{
   alt_name:string;
   name: string;
   catchphrase: string;
-  // bulletpoints: Array<string>;
+  description: string;
   github_link: string;
   submission_links: Array<LinkFilters>;
   topics_and_libraries: Array<Filters>;
@@ -384,7 +384,8 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     icon_path: "media/skill_wrapper.png",
     alt_name: "Skill Wrapper",
     name: "Skill Wrapper: Skill Abstraction Using Foundation Models",
-    catchphrase: "Co-First Author | LEAP @ CoRL 2024, prepared for RSS 2025",
+    catchphrase: "Co-First Author | LEAP @ CoRL 2024",
+    description: "Try a picking up a box, observe when it works, learn!",
     github_link: "https://github.com",
     submission_links: [SUBMISSIONS[17], SUBMISSIONS[15]],
     topics_and_libraries: [TOPICS_LIBRARIES[3], TOPICS_LIBRARIES[4], TOPICS_LIBRARIES[13], TOPICS_LIBRARIES[14],TOPICS_LIBRARIES[33],TOPICS_LIBRARIES[34],TOPICS_LIBRARIES[35],TOPICS_LIBRARIES[36], TOPICS_LIBRARIES[37], TOPICS_LIBRARIES[31]]
@@ -393,8 +394,8 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     icon_path: "media/disentangled_rep_icon.png",
     alt_name:"Disentangled Representations",
     name: "Learning Disentangled Representations for RL using Self-Supervised Learning",
-    catchphrase: "Co-Author | prepared for ICML 2025 ",
-    //bulletpoints: [ ],
+    catchphrase: "First-Author | prepared for ICML 2025 ",
+    description: "SSL for smarter and faster RL",
     github_link: "https://www.github.com",
     submission_links:[SUBMISSIONS[0],SUBMISSIONS[16]],
     topics_and_libraries:[TOPICS_LIBRARIES[24], TOPICS_LIBRARIES[11], TOPICS_LIBRARIES[23], TOPICS_LIBRARIES[31]]
@@ -404,6 +405,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     alt_name: "LaNMP Dataset",
     name: "LaNMP: A Language-Conditioned Mobile Manipulation Benchmark for Autonomous Robots",
     catchphrase: "Co-Author | LangRob @ CoRL 2024, prepared for RAL 2024",
+    description: "Let's integrate vision, audio, LIDAR, language feedback for behavior cloning and see what happens!",
     github_link: "https://github.com/h2r/LaNPM-Dataset",
     submission_links: [updateLink(deepCopy(SUBMISSIONS[11]), 'https://lanmpdataset.github.io/'), SUBMISSIONS[14]],
     topics_and_libraries: [TOPICS_LIBRARIES[3], TOPICS_LIBRARIES[4], TOPICS_LIBRARIES[13], TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[37],TOPICS_LIBRARIES[38], TOPICS_LIBRARIES[39]]
@@ -413,7 +415,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     alt_name:"Dog Vision",
     name: "Categorizing the Visual Environment and Analyzing the Visual Attention of Dogs",
     catchphrase: "Co-Author | Karen T. Romer Undergraduate Teaching and Research Award | CV4Smalls @ WACV 2024 (First Author) & Animal Behavior (Co-Author)",
-    //bulletpoints: ['Led the Computer Vision branch of the project with the objective to track dog eye-fixations and correlate visual behavioral patterns of dogs','Sourced data sets of 35k+ images spanning 250k+ instances across 45 different classes and created a custom Mask-RCNN pipeline for transfer learning (across multiple GPUs)'],
+    description: "Seeing objects through a dog's eyes. Where does their attention go?",
     github_link: "https://github.com/Shreyas-S-Raman/dogvision-eyefixations",
     submission_links: [updateLink(deepCopy(SUBMISSIONS[0]), 'https://arxiv.org/abs/2311.11988'), SUBMISSIONS[5], SUBMISSIONS[6]],
     topics_and_libraries: [TOPICS_LIBRARIES[0],TOPICS_LIBRARIES[1],TOPICS_LIBRARIES[2], TOPICS_LIBRARIES[10], TOPICS_LIBRARIES[12], TOPICS_LIBRARIES[15], TOPICS_LIBRARIES[19]]
@@ -423,7 +425,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     alt_name: "CAPE",
     name: "CAPE: Corrective Actions from Precondition Errors using Large Language Models",
     catchphrase: "First Author | LangRob @ CoRL 2023, ICRA 2024 | Honors Thesis",
-    //bulletpoints: [],
+    description: "LLM Planner + PDDL with Explicit Language Feedback",
     github_link: "https://github.com/Shreyas-S-Raman/corrective_actions_precondition_errors",
     submission_links: [updateLink(deepCopy(SUBMISSIONS[0]),"https://arxiv.org/abs/2211.09935"),updateLink(deepCopy(SUBMISSIONS[3]), 'https://openreview.net/forum?id=LW2YwzqKKP&nesting=2&sort=date-desc'), SUBMISSIONS[2], updateLink(deepCopy(SUBMISSIONS[4]), 'https://openreview.net/forum?id=cMDMRBe1TKs'), updateLink(deepCopy(SUBMISSIONS[11]),'https://shreyas-s-raman.github.io/CAPE/')],
     topics_and_libraries: [TOPICS_LIBRARIES[3], TOPICS_LIBRARIES[4], TOPICS_LIBRARIES[13], TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[16], TOPICS_LIBRARIES[18], TOPICS_LIBRARIES[21], TOPICS_LIBRARIES[26], TOPICS_LIBRARIES[30], TOPICS_LIBRARIES[32]]
@@ -433,7 +435,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     alt_name: "safety_chip_icon",
     name: "Plug in The Safety Chip: Enforcing Constraints for LLM-driven Robot Agents",
     catchphrase: "Co-Author | LangRob @ CoRL, ICRA 2024",
-    //bulletpoints: [],
+    description: "Safety First! For when I want my robot to obey any LTL-specified behavior constraints I give them atop my PDDL planners",
     github_link: "https://github.com/YzyLmc/ltl_safety",
     submission_links: [updateLink(deepCopy(SUBMISSIONS[0]),'https://arxiv.org/abs/2309.09919'), updateLink(deepCopy(SUBMISSIONS[3]), 'https://openreview.net/forum?id=INvxF4iQ34&nesting=2&sort=date-desc'), SUBMISSIONS[2], updateLink(deepCopy(SUBMISSIONS[11]), 'https://yzylmc.github.io/safety-chip/')],
     topics_and_libraries: [TOPICS_LIBRARIES[3], TOPICS_LIBRARIES[4], TOPICS_LIBRARIES[13], TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[16], TOPICS_LIBRARIES[18], TOPICS_LIBRARIES[21], TOPICS_LIBRARIES[22], TOPICS_LIBRARIES[26], TOPICS_LIBRARIES[30]]
@@ -443,7 +445,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     alt_name: "Tiered Rewards",
     name: "Tiered Reward Functions: Specifying and Fast Learning of Desired Behavior",
     catchphrase: "Co-Author | RLC 2024",
-    //bulletpoints: [ ],
+    description: "Who doesn’t love getting dense rewards for incrementally better behavior?",
     github_link: "https://github.com/zhouzypaul/tiered-reward",
     submission_links: [SUBMISSIONS[0], SUBMISSIONS[12], updateLink(deepCopy(SUBMISSIONS[11]), 'https://zhouzypaul.github.io/tiered_reward/')],
     topics_and_libraries: [TOPICS_LIBRARIES[11],TOPICS_LIBRARIES[24], TOPICS_LIBRARIES[25]]
@@ -453,7 +455,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     alt_name: "Cardiac Arrest",
     name: "Development of a CNN for GPD Classification in Cardiac Arrest Patients",
     catchphrase: "Acknowledgement | Brown University Archive",
-    //bulletpoints: [],
+    description: "Let's predict onset of cardiac arrest before they happen!",
     github_link: "https://github.com/syphongha/eeg_research_code_main",
     submission_links: [SUBMISSIONS[8]],
     topics_and_libraries: [TOPICS_LIBRARIES[2], TOPICS_LIBRARIES[7], TOPICS_LIBRARIES[27], TOPICS_LIBRARIES[28]]
@@ -463,7 +465,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     alt_name: "Hierarchical Planning",
     name: "You Knew What I Meant: Improving HRC of Hierarchical Planning through LLMs",
     catchphrase: "Co-Author | ASPIRE HSEF 2024",
-    //bulletpoints: [],
+    description: "Prompting can make the world of a difference for LLM Planners",
     github_link: "https://www.github.com",
     submission_links: [updateLink(deepCopy(SUBMISSIONS[18]), 'https://hfesam2024.conference-program.com/presentation/?id=POS259&sess=sess108')],
     topics_and_libraries: [TOPICS_LIBRARIES[18],TOPICS_LIBRARIES[21], TOPICS_LIBRARIES[26], TOPICS_LIBRARIES[29], TOPICS_LIBRARIES[30], TOPICS_LIBRARIES[32]]
@@ -473,7 +475,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     alt_name: "Image Editing",
     name: "Visual-language embeddings with improved latent semantics for image editing",
     catchphrase: "Co-Author | In Preparation for ICML 2025",
-    //bulletpoints: [],
+    description: "King + Woman = Queen but for image embeddings in language",
     github_link: "https://github.com/dmayo/image-cap",
     submission_links: [SUBMISSIONS[16]],
     topics_and_libraries: [TOPICS_LIBRARIES[1], TOPICS_LIBRARIES[12], TOPICS_LIBRARIES[13],TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[18], TOPICS_LIBRARIES[31]]
@@ -485,6 +487,7 @@ const RESEARCH_DETAILS:  Array<ResearchDetails> = [
     alt_name: "ReCap",
     name: "RECAP: Reconstructing Images for Caption Evaluation",
     catchphrase: "Co-Author | Brown University Archive",
+    description: "Captions are langauge abstractions of images. Let's evaluate them by reconstructing images",
     github_link: "https://github.com/anc2001/recap",
     submission_links: [updateLink(deepCopy(SUBMISSIONS[8]), "https://cs.brown.edu/media/filer_public/1f/75/1f75f7f7-836d-4baa-83c6-6d4c14dc71ca/changadrian_feuchtsheridan_ramanshreyas_sundara.pdf")],
     topics_and_libraries:[TOPICS_LIBRARIES[12], TOPICS_LIBRARIES[13], TOPICS_LIBRARIES[14], TOPICS_LIBRARIES[24], TOPICS_LIBRARIES[31]]

@@ -210,6 +210,16 @@ const FILTERS: Array<Filters> = [
 
 const PROJECT_DETAILS:  Array<ProjectDetails> = [
   {
+    icon_path: "media/video_db.png",
+    alt_name:"VideoDB",
+    name: "Video Analytics using Natural Language",
+    catchphrase: "SQL | MySQL | CLIP | CLIPCap | GPT4-o",
+    bulletpoints: ['Developed a video search system combining SQL retrieval with multimodal similarity search for natural language queries', 'Designed a dynamic schema that populates unseen attributes in user queries'],
+    github_link: "https://www.github.com",
+    languages:[FILTERS[0]],
+    packages:[PACKAGES[2],PACKAGES[31],PACKAGES[32],PACKAGES[0]]
+  },
+  {
     icon_path: "media/slang_icon.png",
     alt_name:"SLANG",
     name: "SLANG: Spot & Langauge",
