@@ -25,13 +25,13 @@ interface Props {
   alt_icon_name: string;
   name: string;
   catchphrase: string;
-  description: Array<string>;
+  description: string;
   github_link: string;
 }
 
 
 //Research Box class containing all the elements for a single research box
-const ResearchBox: React.FC<Props> = ({submission_links, filters, icon, alt_icon_name, name, catchphrase, description, github_link }) => {
+const ResearchBox: React.FC<Props> = ({submission_links, filters, icon, alt_icon_name, name, catchphrase, description, github_link}) => {
   const [selectedPackages] = useState<Array<Filters>>([]);
   const [selectedFilters] = useState<Array<Filters>>([]);
 

@@ -503,7 +503,7 @@ const Projects = () => (
 
     {Array.from(RESEARCH_DETAILS.keys()).map((val, index) => (
       
-      <ResearchBox key={index} submission_links={RESEARCH_DETAILS[val].submission_links} icon={RESEARCH_DETAILS[val].icon_path} alt_icon_name = {RESEARCH_DETAILS[val].alt_name} github_link = {RESEARCH_DETAILS[val].github_link} name = {RESEARCH_DETAILS[val].name} catchphrase = {RESEARCH_DETAILS[val].catchphrase} filters = {RESEARCH_DETAILS[val].topics_and_libraries}/>
+      <ResearchBox key={index} submission_links={RESEARCH_DETAILS[val].submission_links} icon={RESEARCH_DETAILS[val].icon_path} alt_icon_name = {RESEARCH_DETAILS[val].alt_name} github_link = {RESEARCH_DETAILS[val].github_link} name = {RESEARCH_DETAILS[val].name} catchphrase = {RESEARCH_DETAILS[val].catchphrase} description = {RESEARCH_DETAILS[val].description} filters = {RESEARCH_DETAILS[val].topics_and_libraries}/>
     ))}
 
 
